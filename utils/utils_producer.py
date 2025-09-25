@@ -187,6 +187,13 @@ def create_kafka_topic(topic_name, group_id=None) -> None:
             except Exception:
                 pass
 
+def is_topic_available(topic_name) -> None:
+    if {topic_name} is not None:
+        try:
+            logger.info(f"Topic '{topic_name}' is available. ")
+    
+        except Exception:
+            logger.warning(f"Topic is not avaialable")
 
 def clear_kafka_topic(topic_name: str, group_id: Optional[str] = None):
     """
