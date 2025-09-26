@@ -1,8 +1,8 @@
-""" sqlite_consumer_case.py 
+""" mongodb_consumer_aaron.py 
 
 Has the following functions:
-- init_db(config): Initialize the SQLite database and create the 'streamed_messages' table if it doesn't exist.
-- insert_message(message, config): Insert a single processed message into the SQLite database.
+- init_db(config): Initialize the MongoDB database and create the 'category' based tables if it doesn't exist.
+- insert_message(message, config): Insert a single processed message into the MongoDB database.
 
 Example JSON message
 {
@@ -24,7 +24,7 @@ Example JSON message
 # import from standard library
 import os
 import pathlib
-import sqlite3
+from pymongo import MongoClient
 
 # import from local modules
 import utils.utils_config as config
