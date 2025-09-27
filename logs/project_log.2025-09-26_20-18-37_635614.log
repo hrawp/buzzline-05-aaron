@@ -1,0 +1,9 @@
+2025-09-26 20:18:37 | INFO | MONGODB_URI: mongodb://localhost:27017/
+2025-09-26 20:18:37 | INFO | MONGODB_DB: mongo_buzz_database
+2025-09-26 20:18:37 | INFO | Inserted message with _id: 68d73b6d16f5bdc393f8ab0e into collection: messages_humor
+2025-09-26 20:18:37 | INFO | MONGODB_URI: mongodb://localhost:27017/
+2025-09-26 20:18:37 | INFO | MONGODB_DB: mongo_buzz_database
+2025-09-26 20:18:37 | INFO | MONGODB_URI: mongodb://localhost:27017/
+2025-09-26 20:18:37 | INFO | MONGODB_DB: mongo_buzz_database
+2025-09-26 20:18:37 | INFO | Deleted message with _id 68d73b6d16f5bdc393f8ab0e from collection messages_humor.
+2025-09-26 20:18:37 | INFO | Finished MongoDB testing.

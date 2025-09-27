@@ -1,78 +1,56 @@
-""" mongodb_consumer_aaron.py 
-
-Has the following functions:
-- init_db(config): Initialize the MongoDB database and create the 'category' based tables if it doesn't exist.
-- insert_message(message, config): Insert a single processed message into the MongoDB database.
-
-Example JSON message
-{
-    "message": "I just shared a meme! It was amazing.",
-    "author": "Charlie",
-    "timestamp": "2025-01-29 14:35:20",
-    "category": "humor",
-    "sentiment": 0.87,
-    "keyword_mentioned": "meme",
-    "message_length": 42
-}
-
-"""
-
-#####################################
-# Import Modules
-#####################################
-
-# import from standard library
+# Standard Library Imports
 import os
 import pathlib
 from pymongo import MongoClient
+from bson import ObjectId
 
-# import from local modules
+# Local Module Imports
 import utils.utils_config as config
 from utils.utils_logger import logger
+from utils.utils_config import get_mongodb_uri, get_mongodb_db, get_mongodb_collection
+
 
 #####################################
-# Define Function to Initialize SQLite Database
+# Initialize MongoDB
 #####################################
-
-
-def init_db(config: dict):
+def init_db():
     """
-    Initialize MongoDB connection and test connectivity.
-
-    Args:
-        config (dict): Dictionary containing MongoDB config, e.g., URI and DB name.
+    Initialize MongoDB connection and test connectivity using environment config.
     """
     try:
-        client = MongoClient(config["MONGO_URI"])
-        db = client[config["DB_NAME"]]
-        logger.info(f"Connected to MongoDB at {config['MONGO_URI']}, DB: {config['DB_NAME']}")
+        uri = get_mongodb_uri()
+        db_name = get_mongodb_db()
+
+        client = MongoClient(uri)
+        db = client[db_name]
+
+        logger.info(f"Connected to MongoDB at {uri}, DB: {db_name}")
+        return db  # Optional: return db if needed elsewhere
     except Exception as e:
         logger.error(f"ERROR: Failed to initialize MongoDB: {e}")
-
+        raise
 
 
 #####################################
-# Define Function to Insert a Processed Message into the Database
+# Insert a Message into MongoDB
 #####################################
-
-
-def insert_message(message: dict, config: dict) -> None:
+def insert_message(message: dict) -> None:
     """
     Insert a single processed message into a MongoDB collection based on category.
 
     Args:
         message (dict): The message to insert.
-        config (dict): MongoDB config with URI and DB name.
     """
     logger.info("Calling MongoDB insert_message() with:")
     logger.info(f"{message=}")
-    logger.info(f"{config=}")
 
     try:
-        client = MongoClient(config["MONGO_URI"])
-        db = client[config["DB_NAME"]]
+        uri = get_mongodb_uri()
+        db_name = get_mongodb_db()
 
-        # Use category as collection name (sanitized)
+        client = MongoClient(uri)
+        db = client[db_name]
+
         category = message["category"].lower().replace(" ", "_")
         collection = db[f"messages_{category}"]
 
@@ -82,29 +60,47 @@ def insert_message(message: dict, config: dict) -> None:
         logger.error(f"ERROR: Failed to insert message into MongoDB: {e}")
 
 
+#####################################
+# Delete a Message from MongoDB
+#####################################
+def delete_message(message_id: str, category: str) -> None:
+    """
+    Delete a message from the MongoDB collection by its message ID.
+
+    Args:
+        message_id (str): The ID of the message to delete.
+        category (str): The category of the message (used to determine collection).
+    """
+    try:
+        uri = get_mongodb_uri()
+        db_name = get_mongodb_db()
+
+        client = MongoClient(uri)
+        db = client[db_name]
+
+        sanitized_category = category.lower().replace(" ", "_")
+        collection = db[f"messages_{sanitized_category}"]
+
+        result = collection.delete_one({"_id": ObjectId(message_id)})
+
+        if result.deleted_count == 1:
+            logger.info(f"Deleted message with _id {message_id} from collection messages_{sanitized_category}.")
+        else:
+            logger.warning(f"No message found with _id {message_id} in collection messages_{sanitized_category}.")
+    except Exception as e:
+        logger.error(f"ERROR: Failed to delete message from MongoDB: {e}")
+
 
 #####################################
-# Define Function to Delete a Message from the Database
-#####################################
-
-
-
-
-
-#####################################
-# Define main() function for testing
+# Main Function for Testing
 #####################################
 def main():
     logger.info("Starting MongoDB db testing.")
 
-    # Load config for MongoDB
-    db_config = {
-        "MONGO_URI": "mongodb://localhost:27017/",
-        "DB_NAME": "buzz_test_db"
-    }
+    # Initialize DB (check connection)
+    init_db()
 
-    init_db(db_config)
-
+    # Sample test message
     test_message = {
         "message": "I just shared a meme! It was amazing.",
         "author": "Charlie",
@@ -115,27 +111,34 @@ def main():
         "message_length": 42,
     }
 
-    insert_message(test_message, db_config)
+    # Insert test message
+    insert_message(test_message)
 
-    # Retrieve and delete test message
-   # try:
-    #    client = MongoClient(db_config["MONGO_URI"])
-   #     db = client[db_config["DB_NAME"]]
-    #    collection = db["messages_humor"]
-     #   found = collection.find_one({"message": test_message["message"], "author": test_message["author"]})
-      #  if found:
-       #     delete_message(str(found["_id"]), "humor", db_config)
-        #else:
-         #   logger.warning("Test message not found; nothing to delete.")
-  #  except Exception as e:
-   #     logger.error(f"ERROR: Failed to retrieve or delete test message: {e}")
+    # Retrieve and delete the test message
+    try:
+        uri = get_mongodb_uri()
+        db_name = get_mongodb_db()
+        client = MongoClient(uri)
+        db = client[db_name]
+        collection = db["messages_humor"]
+
+        found = collection.find_one({
+            "message": test_message["message"],
+            "author": test_message["author"]
+        })
+
+        if found:
+            delete_message(str(found["_id"]), "humor")
+        else:
+            logger.warning("Test message not found; nothing to delete.")
+    except Exception as e:
+        logger.error(f"ERROR: Failed to retrieve or delete test message: {e}")
 
     logger.info("Finished MongoDB testing.")
 
 
-# #####################################
-# Conditional Execution
 #####################################
-
+# Run if Script is Executed Directly
+#####################################
 if __name__ == "__main__":
     main()
