@@ -81,6 +81,7 @@ def create_kafka_consumer(
             request_timeout_ms=30000,
             session_timeout_ms=15000,
             heartbeat_interval_ms=3000,
+            auto_commit_interval_ms=5000,
         )
         logger.info("Kafka consumer created successfully.")
         return consumer
