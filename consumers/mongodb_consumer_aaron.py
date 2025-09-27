@@ -35,26 +35,20 @@ from utils.utils_logger import logger
 #####################################
 
 
-def init_db(db_path: pathlib.Path):
+def init_db(config: dict):
     """
-    Initialize the SQLite database -
-    if it doesn't exist, create the 'streamed_messages' table
-    and if it does, recreate it.
+    Initialize MongoDB connection and test connectivity.
 
     Args:
-    - db_path (pathlib.Path): Path to the SQLite database file.
-
+        config (dict): Dictionary containing MongoDB config, e.g., URI and DB name.
     """
-    logger.info("Calling SQLite init_db() with {db_path=}.")
     try:
-        # Ensure the directories for the db exist
-        os.makedirs(os.path.dirname(db_path), exist_ok=True)
-
-        with sqlite3.connect(db_path) as conn:
-            pass  # Don't create any tables yet
-        logger.info(f"SUCCESS: Database initialized and table ready at {db_path}.")
+        client = MongoClient(config["MONGO_URI"])
+        db = client[config["DB_NAME"]]
+        logger.info(f"Connected to MongoDB at {config['MONGO_URI']}, DB: {config['DB_NAME']}")
     except Exception as e:
-        logger.error(f"ERROR: Failed to initialize a sqlite database at {db_path}: {e}")
+        logger.error(f"ERROR: Failed to initialize MongoDB: {e}")
+
 
 
 #####################################
@@ -62,61 +56,31 @@ def init_db(db_path: pathlib.Path):
 #####################################
 
 
-def insert_message(message: dict, db_path: pathlib.Path) -> None:
+def insert_message(message: dict, config: dict) -> None:
     """
-    Insert a single processed message into the SQLite database.
-    If a table for the message's category does not exist, create it.
-    
-    Args:
-        message (dict): Processed message to insert.
-        db_path (pathlib.Path): Path to the SQLite database file.
-    """
-    logger.info("Calling SQLite insert_message() with:")
-    logger.info(f"{message=}")
-    logger.info(f"{db_path=}")
+    Insert a single processed message into a MongoDB collection based on category.
 
-    STR_PATH = str(db_path)
-    category_table = f"messages_{message['category'].lower().replace(' ', '_')}"  # Sanitize table name
+    Args:
+        message (dict): The message to insert.
+        config (dict): MongoDB config with URI and DB name.
+    """
+    logger.info("Calling MongoDB insert_message() with:")
+    logger.info(f"{message=}")
+    logger.info(f"{config=}")
 
     try:
-        with sqlite3.connect(STR_PATH) as conn:
-            cursor = conn.cursor()
+        client = MongoClient(config["MONGO_URI"])
+        db = client[config["DB_NAME"]]
 
-            # Create the table if it doesn't exist
-            cursor.execute(f"""
-                CREATE TABLE IF NOT EXISTS {category_table} (
-                    id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    message TEXT,
-                    author TEXT,
-                    timestamp TEXT,
-                    category TEXT,
-                    sentiment TEXT,
-                    keyword_mentioned BOOLEAN,
-                    message_length INTEGER
-                )
-            """)
+        # Use category as collection name (sanitized)
+        category = message["category"].lower().replace(" ", "_")
+        collection = db[f"messages_{category}"]
 
-            # Insert the message into the appropriate category table
-            cursor.execute(
-                f"""
-                INSERT INTO {category_table} (
-                    message, author, timestamp, category, sentiment, keyword_mentioned, message_length
-                ) VALUES (?, ?, ?, ?, ?, ?, ?)
-            """,
-                (
-                    message["message"],
-                    message["author"],
-                    message["timestamp"],
-                    message["category"],
-                    message["sentiment"],
-                    message["keyword_mentioned"],
-                    message["message_length"],
-                ),
-            )
-            conn.commit()
-        logger.info(f"Inserted one message into table: {category_table}")
+        result = collection.insert_one(message)
+        logger.info(f"Inserted message with _id: {result.inserted_id} into collection: messages_{category}")
     except Exception as e:
-        logger.error(f"ERROR: Failed to insert message into the database: {e}")
+        logger.error(f"ERROR: Failed to insert message into MongoDB: {e}")
+
 
 
 #####################################
@@ -124,38 +88,22 @@ def insert_message(message: dict, db_path: pathlib.Path) -> None:
 #####################################
 
 
-def delete_message(message_id: int, db_path: pathlib.Path) -> None:
-    """
-    Delete a message from the SQLite database by its ID.
 
-    Args:
-    - message_id (int): ID of the message to delete.
-    - db_path (pathlib.Path): Path to the SQLite database file.
-    """
-    STR_PATH = str(db_path)
-    try:
-        with sqlite3.connect(STR_PATH) as conn:
-            cursor = conn.cursor()
-            cursor.execute("DELETE FROM streamed_messages WHERE id = ?", (message_id,))
-            conn.commit()
-        logger.info(f"Deleted message with id {message_id} from the database.")
-    except Exception as e:
-        logger.error(f"ERROR: Failed to delete message from the database: {e}")
 
 
 #####################################
 # Define main() function for testing
 #####################################
 def main():
-    logger.info("Starting db testing.")
+    logger.info("Starting MongoDB db testing.")
 
-    # Use config to make a path to a parallel test database
-    DATA_PATH: pathlib.path = config.get_base_data_path
-    TEST_DB_PATH: pathlib.Path = DATA_PATH / "test_buzz.sqlite"
+    # Load config for MongoDB
+    db_config = {
+        "MONGO_URI": "mongodb://localhost:27017/",
+        "DB_NAME": "buzz_test_db"
+    }
 
-    # Initialize the SQLite database by passing in the path
-    init_db(TEST_DB_PATH)
-    logger.info(f"Initialized database file at {TEST_DB_PATH}.")
+    init_db(db_config)
 
     test_message = {
         "message": "I just shared a meme! It was amazing.",
@@ -167,27 +115,22 @@ def main():
         "message_length": 42,
     }
 
-    insert_message(test_message, TEST_DB_PATH)
+    insert_message(test_message, db_config)
 
-    # Retrieve the ID of the inserted test message
-    try:
-        with sqlite3.connect(TEST_DB_PATH, timeout=1.0) as conn:
-            cursor = conn.cursor()
-            cursor.execute(
-                "SELECT id FROM streamed_messages WHERE message = ? AND author = ?",
-                (test_message["message"], test_message["author"]),
-            )
-            row = cursor.fetchone()
-            if row:
-                test_message_id = row[0]
-                # Delete the test message
-                delete_message(test_message_id, TEST_DB_PATH)
-            else:
-                logger.warning("Test message not found; nothing to delete.")
-    except Exception as e:
-        logger.error(f"ERROR: Failed to retrieve or delete test message: {e}")
+    # Retrieve and delete test message
+   # try:
+    #    client = MongoClient(db_config["MONGO_URI"])
+   #     db = client[db_config["DB_NAME"]]
+    #    collection = db["messages_humor"]
+     #   found = collection.find_one({"message": test_message["message"], "author": test_message["author"]})
+      #  if found:
+       #     delete_message(str(found["_id"]), "humor", db_config)
+        #else:
+         #   logger.warning("Test message not found; nothing to delete.")
+  #  except Exception as e:
+   #     logger.error(f"ERROR: Failed to retrieve or delete test message: {e}")
 
-    logger.info("Finished testing.")
+    logger.info("Finished MongoDB testing.")
 
 
 # #####################################

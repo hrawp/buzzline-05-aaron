@@ -124,23 +124,23 @@ def insert_message(message: dict, db_path: pathlib.Path) -> None:
 #####################################
 
 
-def delete_message(message_id: int, db_path: pathlib.Path) -> None:
-    """
-    Delete a message from the SQLite database by its ID.
+#def delete_message(message_id: int, db_path: pathlib.Path) -> None:
+ #   """
+  #  Delete a message from the SQLite database by its ID.
 
-    Args:
-    - message_id (int): ID of the message to delete.
-    - db_path (pathlib.Path): Path to the SQLite database file.
-    """
-    STR_PATH = str(db_path)
-    try:
-        with sqlite3.connect(STR_PATH) as conn:
-            cursor = conn.cursor()
-            cursor.execute("DELETE FROM streamed_messages WHERE id = ?", (message_id,))
-            conn.commit()
-        logger.info(f"Deleted message with id {message_id} from the database.")
-    except Exception as e:
-        logger.error(f"ERROR: Failed to delete message from the database: {e}")
+  #  Args:
+  #3  - message_id (int): ID of the message to delete.
+  #  - db_path (pathlib.Path): Path to the SQLite database file.
+  #  """
+  #  STR_PATH = str(db_path)
+   # try:
+  #      with sqlite3.connect(STR_PATH) as conn:
+   #         cursor = conn.cursor()
+   #         cursor.execute("DELETE FROM streamed_messages WHERE id = ?", (message_id,))
+   #         conn.commit()
+   #     logger.info(f"Deleted message with id {message_id} from the database.")
+   # except Exception as e:
+   #     logger.error(f"ERROR: Failed to delete message from the database: {e}")
 
 
 #####################################

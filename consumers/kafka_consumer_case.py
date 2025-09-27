@@ -40,7 +40,7 @@ from utils.utils_producer import verify_services, is_topic_available
 
 # Ensure the parent directory is in sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-from consumers.sqlite_consumer_case import init_db, insert_message
+from consumers.mongodb_consumer_aaron import init_db, insert_message
 
 #####################################
 # Function to process a single message
@@ -160,51 +160,45 @@ def consume_messages_from_kafka(
 
 def main():
     """
-    Main function to run the consumer process.
-
-    Reads configuration, initializes the database, and starts consumption.
+    Main function to run the consumer process with MongoDB.
+    Reads configuration, initializes the MongoDB database, and starts consuming messages.
     """
-    logger.info("Starting Consumer to run continuously.")
-    logger.info("Things can fail or get interrupted, so use a try block.")
-    logger.info("Moved .env variables into a utils config module.")
+    logger.info("Starting Consumer with MongoDB backend.")
+    logger.info("Reading environment variables using config module.")
 
-    logger.info("STEP 1. Read environment variables using new config functions.")
+    # STEP 1: Read environment variables
     try:
         topic = config.get_kafka_topic()
         kafka_url = config.get_kafka_broker_address()
         group_id = config.get_kafka_consumer_group_id()
         interval_secs: int = config.get_message_interval_seconds_as_int()
-        sqlite_path: pathlib.Path = config.get_sqlite_path()
-        logger.info("SUCCESS: Read environment variables.")
+
+        # NEW: Get MongoDB config (update this function in your utils)
+        mongo_config = config.get_mongo_config()  # should return dict with MONGO_URI and DB_NAME
+
+        logger.info("SUCCESS: Read all environment variables.")
     except Exception as e:
         logger.error(f"ERROR: Failed to read environment variables: {e}")
         sys.exit(1)
 
-    logger.info("STEP 2. Delete any prior database file for a fresh start.")
-    if sqlite_path.exists():
-        try:
-            sqlite_path.unlink()
-            logger.info("SUCCESS: Deleted database file.")
-        except Exception as e:
-            logger.error(f"ERROR: Failed to delete DB file: {e}")
-            sys.exit(2)
+    # STEP 2: (MongoDB doesn't use a local file — skip deletion step)
 
-    logger.info("STEP 3. Initialize a new database with an empty table.")
+    # STEP 3: Initialize MongoDB connection
     try:
-        init_db(sqlite_path)
+        init_db(mongo_config)
     except Exception as e:
-        logger.error(f"ERROR: Failed to create db table: {e}")
-        sys.exit(3)
+        logger.error(f"ERROR: Failed to connect to MongoDB: {e}")
+        sys.exit(2)
 
-    logger.info("STEP 4. Begin consuming and storing messages.")
+    # STEP 4: Begin consuming messages and writing to MongoDB
     try:
         consume_messages_from_kafka(
-            topic, kafka_url, group_id, sqlite_path, interval_secs
+            topic, kafka_url, group_id, mongo_config, interval_secs
         )
     except KeyboardInterrupt:
         logger.warning("Consumer interrupted by user.")
     except Exception as e:
-        logger.error(f"Unexpected error: {e}")
+        logger.error(f"Unexpected error during Kafka consumption: {e}")
     finally:
         logger.info("Consumer shutting down.")
 
