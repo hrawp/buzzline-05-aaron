@@ -146,7 +146,7 @@ def consume_messages_from_kafka(
         for message in consumer:
             processed_message = process_message(message.value)
             if processed_message:
-                insert_message(processed_message, sql_path)
+                insert_message(processed_message)
 
     except Exception as e:
         logger.error(f"ERROR: Could not consume messages from Kafka: {e}")
@@ -185,7 +185,7 @@ def main():
 
     # STEP 3: Initialize MongoDB connection
     try:
-        init_db(mongo_config)
+        init_db()
     except Exception as e:
         logger.error(f"ERROR: Failed to connect to MongoDB: {e}")
         sys.exit(2)

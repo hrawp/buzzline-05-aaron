@@ -152,7 +152,21 @@ def get_mongodb_collection() -> str:
     logger.info(f"MONGODB_COLLECTION: {collection}")
     return collection
 
+def get_mongo_config():
+    """
+    Returns MongoDB configuration from environment variables.
 
+    Expects:
+        MONGO_URI - full connection string, e.g., mongodb://localhost:27017
+        MONGO_DB_NAME - name of the MongoDB database
+
+    Returns:
+        dict: containing 'MONGO_URI' and 'DB_NAME'
+    """
+    return {
+        "MONGO_URI": os.getenv("MONGO_URI", "mongodb://localhost:27017"),
+        "DB_NAME": os.getenv("MONGO_DB_NAME", "my_database")
+    }
 #####################################
 # Conditional Execution
 #####################################
