@@ -1,0 +1,47 @@
+2025-09-27 09:26:19 | INFO | Calling MongoDB insert_message() with:
+2025-09-27 09:26:19 | INFO | message={'message': 'I just shared game! It was amazing.', 'author': 'Alice', 'timestamp': '2025-09-27 09:26:17', 'category': 'gaming', 'sentiment': 0.01, 'keyword_mentioned': 'game', 'message_length': 35}
+2025-09-27 09:26:19 | INFO | MONGODB_URI: mongodb://localhost:27017/
+2025-09-27 09:26:19 | INFO | MONGODB_DB: mongo_buzz_database
+2025-09-27 09:26:19 | INFO | Inserted message with _id: 68d7f40b1b5aa3cdf9f49e43 into collection: messages_gaming
+2025-09-27 09:26:22 | INFO | Called process_message() with:
+2025-09-27 09:26:22 | INFO |    message={'message': 'I just found travel! It was amazing.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:26:22', 'category': 'travel', 'sentiment': 0.8, 'keyword_mentioned': 'travel', 'message_length': 36}
+2025-09-27 09:26:22 | INFO | Processed message: {'message': 'I just found travel! It was amazing.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:26:22', 'category': 'travel', 'sentiment': 0.8, 'keyword_mentioned': 'travel', 'message_length': 36}
+2025-09-27 09:26:22 | INFO | Calling MongoDB insert_message() with:
+2025-09-27 09:26:22 | INFO | message={'message': 'I just found travel! It was amazing.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:26:22', 'category': 'travel', 'sentiment': 0.8, 'keyword_mentioned': 'travel', 'message_length': 36}
+2025-09-27 09:26:22 | INFO | MONGODB_URI: mongodb://localhost:27017/
+2025-09-27 09:26:22 | INFO | MONGODB_DB: mongo_buzz_database
+2025-09-27 09:26:23 | INFO | Inserted message with _id: 68d7f40f1b5aa3cdf9f49e45 into collection: messages_travel
+2025-09-27 09:26:27 | INFO | Called process_message() with:
+2025-09-27 09:26:27 | INFO |    message={'message': 'I just loved a movie! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:26:27', 'category': 'entertainment', 'sentiment': 0.33, 'keyword_mentioned': 'movie', 'message_length': 35}
+2025-09-27 09:26:27 | INFO | Processed message: {'message': 'I just loved a movie! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:26:27', 'category': 'entertainment', 'sentiment': 0.33, 'keyword_mentioned': 'movie', 'message_length': 35}
+2025-09-27 09:26:27 | INFO | Calling MongoDB insert_message() with:
+2025-09-27 09:26:27 | INFO | message={'message': 'I just loved a movie! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:26:27', 'category': 'entertainment', 'sentiment': 0.33, 'keyword_mentioned': 'movie', 'message_length': 35}
+2025-09-27 09:26:27 | INFO | MONGODB_URI: mongodb://localhost:27017/
+2025-09-27 09:26:27 | INFO | MONGODB_DB: mongo_buzz_database
+2025-09-27 09:26:28 | INFO | Inserted message with _id: 68d7f4141b5aa3cdf9f49e47 into collection: messages_entertainment
+2025-09-27 09:26:32 | INFO | Called process_message() with:
+2025-09-27 09:26:32 | INFO |    message={'message': 'I just tried Python! It was amazing.', 'author': 'Bob', 'timestamp': '2025-09-27 09:26:32', 'category': 'tech', 'sentiment': 0.87, 'keyword_mentioned': 'Python', 'message_length': 36}
+2025-09-27 09:26:32 | INFO | Processed message: {'message': 'I just tried Python! It was amazing.', 'author': 'Bob', 'timestamp': '2025-09-27 09:26:32', 'category': 'tech', 'sentiment': 0.87, 'keyword_mentioned': 'Python', 'message_length': 36}
+2025-09-27 09:26:32 | INFO | Calling MongoDB insert_message() with:
+2025-09-27 09:26:32 | INFO | message={'message': 'I just tried Python! It was amazing.', 'author': 'Bob', 'timestamp': '2025-09-27 09:26:32', 'category': 'tech', 'sentiment': 0.87, 'keyword_mentioned': 'Python', 'message_length': 36}
+2025-09-27 09:26:32 | INFO | MONGODB_URI: mongodb://localhost:27017/
+2025-09-27 09:26:32 | INFO | MONGODB_DB: mongo_buzz_database
+2025-09-27 09:26:33 | INFO | Inserted message with _id: 68d7f4191b5aa3cdf9f49e49 into collection: messages_tech
+2025-09-27 09:26:37 | INFO | Called process_message() with:
+2025-09-27 09:26:38 | INFO |    message={'message': 'I just loved a story! It was weird.', 'author': 'Alice', 'timestamp': '2025-09-27 09:26:37', 'category': 'other', 'sentiment': 0.94, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-09-27 09:26:38 | INFO | Processed message: {'message': 'I just loved a story! It was weird.', 'author': 'Alice', 'timestamp': '2025-09-27 09:26:37', 'category': 'other', 'sentiment': 0.94, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-09-27 09:26:38 | INFO | Calling MongoDB insert_message() with:
+2025-09-27 09:26:38 | INFO | message={'message': 'I just loved a story! It was weird.', 'author': 'Alice', 'timestamp': '2025-09-27 09:26:37', 'category': 'other', 'sentiment': 0.94, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-09-27 09:26:38 | INFO | MONGODB_URI: mongodb://localhost:27017/
+2025-09-27 09:26:38 | INFO | MONGODB_DB: mongo_buzz_database
+2025-09-27 09:26:38 | INFO | Inserted message with _id: 68d7f41e1b5aa3cdf9f49e4b into collection: messages_other
+2025-09-27 09:26:43 | INFO | Called process_message() with:
+2025-09-27 09:26:43 | INFO |    message={'message': 'I just found a story! It was amazing.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:26:42', 'category': 'other', 'sentiment': 0.01, 'keyword_mentioned': 'other', 'message_length': 37}
+2025-09-27 09:26:43 | INFO | Processed message: {'message': 'I just found a story! It was amazing.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:26:42', 'category': 'other', 'sentiment': 0.01, 'keyword_mentioned': 'other', 'message_length': 37}
+2025-09-27 09:26:43 | INFO | Calling MongoDB insert_message() with:
+2025-09-27 09:26:43 | INFO | message={'message': 'I just found a story! It was amazing.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:26:42', 'category': 'other', 'sentiment': 0.01, 'keyword_mentioned': 'other', 'message_length': 37}
+2025-09-27 09:26:43 | INFO | MONGODB_URI: mongodb://localhost:27017/
+2025-09-27 09:26:43 | INFO | MONGODB_DB: mongo_buzz_database
+2025-09-27 09:26:43 | INFO | Inserted message with _id: 68d7f4231b5aa3cdf9f49e4d into collection: messages_other
+2025-09-27 09:26:43 | WARNING | Consumer interrupted by user.
+2025-09-27 09:26:43 | INFO | Consumer shutting down.

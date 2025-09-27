@@ -1,196 +1,273 @@
-2025-09-27 08:54:29 | INFO | {'message': 'I just found JavaScript! It was funny.', 'author': 'Eve', 'timestamp': '2025-09-27 08:54:29', 'category': 'tech', 'sentiment': 0.3, 'keyword_mentioned': 'JavaScript', 'message_length': 38}
-2025-09-27 08:54:34 | INFO | {'message': 'I just loved game! It was amazing.', 'author': 'Alice', 'timestamp': '2025-09-27 08:54:34', 'category': 'gaming', 'sentiment': 0.26, 'keyword_mentioned': 'game', 'message_length': 34}
-2025-09-27 08:54:39 | INFO | {'message': 'I just shared travel! It was exciting.', 'author': 'Bob', 'timestamp': '2025-09-27 08:54:39', 'category': 'travel', 'sentiment': 0.9, 'keyword_mentioned': 'travel', 'message_length': 38}
-2025-09-27 08:54:44 | INFO | {'message': 'I just found a movie! It was boring.', 'author': 'Charlie', 'timestamp': '2025-09-27 08:54:44', 'category': 'entertainment', 'sentiment': 0.25, 'keyword_mentioned': 'movie', 'message_length': 36}
-2025-09-27 08:54:49 | INFO | {'message': 'I just loved a meme! It was amazing.', 'author': 'Charlie', 'timestamp': '2025-09-27 08:54:49', 'category': 'humor', 'sentiment': 0.84, 'keyword_mentioned': 'meme', 'message_length': 36}
-2025-09-27 08:54:54 | INFO | {'message': 'I just loved a meme! It was exciting.', 'author': 'Bob', 'timestamp': '2025-09-27 08:54:54', 'category': 'humor', 'sentiment': 0.31, 'keyword_mentioned': 'meme', 'message_length': 37}
-2025-09-27 08:55:04 | INFO | {'message': 'I just loved travel! It was funny.', 'author': 'Alice', 'timestamp': '2025-09-27 08:55:04', 'category': 'travel', 'sentiment': 0.65, 'keyword_mentioned': 'travel', 'message_length': 34}
-2025-09-27 08:55:09 | INFO | {'message': 'I just shared recipe! It was weird.', 'author': 'Eve', 'timestamp': '2025-09-27 08:55:09', 'category': 'food', 'sentiment': 0.74, 'keyword_mentioned': 'recipe', 'message_length': 35}
-2025-09-27 08:55:14 | INFO | {'message': 'I just shared game! It was weird.', 'author': 'Alice', 'timestamp': '2025-09-27 08:55:14', 'category': 'gaming', 'sentiment': 0.29, 'keyword_mentioned': 'game', 'message_length': 33}
-2025-09-27 08:55:19 | INFO | {'message': 'I just shared a meme! It was exciting.', 'author': 'Alice', 'timestamp': '2025-09-27 08:55:19', 'category': 'humor', 'sentiment': 0.67, 'keyword_mentioned': 'meme', 'message_length': 38}
-2025-09-27 08:55:24 | INFO | {'message': 'I just shared Python! It was weird.', 'author': 'Bob', 'timestamp': '2025-09-27 08:55:24', 'category': 'tech', 'sentiment': 0.28, 'keyword_mentioned': 'Python', 'message_length': 35}
-2025-09-27 08:55:29 | INFO | {'message': 'I just found an app! It was boring.', 'author': 'Eve', 'timestamp': '2025-09-27 08:55:29', 'category': 'other', 'sentiment': 0.02, 'keyword_mentioned': 'other', 'message_length': 35}
-2025-09-27 08:55:34 | INFO | {'message': 'I just found JavaScript! It was weird.', 'author': 'Alice', 'timestamp': '2025-09-27 08:55:34', 'category': 'tech', 'sentiment': 0.95, 'keyword_mentioned': 'JavaScript', 'message_length': 38}
-2025-09-27 08:55:39 | INFO | {'message': 'I just saw Python! It was boring.', 'author': 'Bob', 'timestamp': '2025-09-27 08:55:39', 'category': 'tech', 'sentiment': 0.07, 'keyword_mentioned': 'Python', 'message_length': 33}
-2025-09-27 08:55:44 | INFO | {'message': 'I just loved recipe! It was boring.', 'author': 'Eve', 'timestamp': '2025-09-27 08:55:44', 'category': 'food', 'sentiment': 0.99, 'keyword_mentioned': 'recipe', 'message_length': 35}
-2025-09-27 08:55:49 | INFO | {'message': 'I just found travel! It was boring.', 'author': 'Charlie', 'timestamp': '2025-09-27 08:55:49', 'category': 'travel', 'sentiment': 0.05, 'keyword_mentioned': 'travel', 'message_length': 35}
-2025-09-27 08:55:54 | INFO | {'message': 'I just loved a story! It was weird.', 'author': 'Charlie', 'timestamp': '2025-09-27 08:55:54', 'category': 'other', 'sentiment': 0.44, 'keyword_mentioned': 'other', 'message_length': 35}
-2025-09-27 08:55:59 | INFO | {'message': 'I just found recipe! It was exciting.', 'author': 'Alice', 'timestamp': '2025-09-27 08:55:59', 'category': 'food', 'sentiment': 0.33, 'keyword_mentioned': 'recipe', 'message_length': 37}
-2025-09-27 08:56:04 | INFO | {'message': 'I just saw an app! It was boring.', 'author': 'Bob', 'timestamp': '2025-09-27 08:56:04', 'category': 'other', 'sentiment': 0.61, 'keyword_mentioned': 'other', 'message_length': 33}
-2025-09-27 08:56:09 | INFO | {'message': 'I just loved a movie! It was boring.', 'author': 'Charlie', 'timestamp': '2025-09-27 08:56:09', 'category': 'entertainment', 'sentiment': 0.75, 'keyword_mentioned': 'movie', 'message_length': 36}
-2025-09-27 08:56:14 | INFO | {'message': 'I just tried travel! It was exciting.', 'author': 'Alice', 'timestamp': '2025-09-27 08:56:14', 'category': 'travel', 'sentiment': 0.79, 'keyword_mentioned': 'travel', 'message_length': 37}
-2025-09-27 08:56:19 | INFO | {'message': 'I just tried recipe! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-27 08:56:19', 'category': 'food', 'sentiment': 0.96, 'keyword_mentioned': 'recipe', 'message_length': 34}
-2025-09-27 08:56:24 | INFO | {'message': 'I just loved a meme! It was weird.', 'author': 'Charlie', 'timestamp': '2025-09-27 08:56:24', 'category': 'humor', 'sentiment': 0.05, 'keyword_mentioned': 'meme', 'message_length': 34}
-2025-09-27 08:56:29 | INFO | {'message': 'I just found travel! It was funny.', 'author': 'Eve', 'timestamp': '2025-09-27 08:56:29', 'category': 'travel', 'sentiment': 0.83, 'keyword_mentioned': 'travel', 'message_length': 34}
-2025-09-27 08:56:34 | INFO | {'message': 'I just saw recipe! It was weird.', 'author': 'Alice', 'timestamp': '2025-09-27 08:56:34', 'category': 'food', 'sentiment': 0.74, 'keyword_mentioned': 'recipe', 'message_length': 32}
-2025-09-27 08:56:39 | INFO | {'message': 'I just saw travel! It was amazing.', 'author': 'Alice', 'timestamp': '2025-09-27 08:56:39', 'category': 'travel', 'sentiment': 0.48, 'keyword_mentioned': 'travel', 'message_length': 34}
-2025-09-27 08:56:44 | INFO | {'message': 'I just saw Python! It was exciting.', 'author': 'Eve', 'timestamp': '2025-09-27 08:56:44', 'category': 'tech', 'sentiment': 0.2, 'keyword_mentioned': 'Python', 'message_length': 35}
-2025-09-27 08:56:49 | INFO | {'message': 'I just found game! It was exciting.', 'author': 'Charlie', 'timestamp': '2025-09-27 08:56:49', 'category': 'gaming', 'sentiment': 0.6, 'keyword_mentioned': 'game', 'message_length': 35}
-2025-09-27 08:56:54 | INFO | {'message': 'I just found game! It was boring.', 'author': 'Bob', 'timestamp': '2025-09-27 08:56:54', 'category': 'gaming', 'sentiment': 0.08, 'keyword_mentioned': 'game', 'message_length': 33}
-2025-09-27 08:56:59 | INFO | {'message': 'I just found a movie! It was amazing.', 'author': 'Eve', 'timestamp': '2025-09-27 08:56:59', 'category': 'entertainment', 'sentiment': 0.1, 'keyword_mentioned': 'movie', 'message_length': 37}
-2025-09-27 08:57:04 | INFO | {'message': 'I just tried Python! It was boring.', 'author': 'Eve', 'timestamp': '2025-09-27 08:57:04', 'category': 'tech', 'sentiment': 0.32, 'keyword_mentioned': 'Python', 'message_length': 35}
-2025-09-27 08:57:09 | INFO | {'message': 'I just saw recipe! It was exciting.', 'author': 'Bob', 'timestamp': '2025-09-27 08:57:09', 'category': 'food', 'sentiment': 0.0, 'keyword_mentioned': 'recipe', 'message_length': 35}
-2025-09-27 08:57:14 | INFO | {'message': 'I just found JavaScript! It was boring.', 'author': 'Eve', 'timestamp': '2025-09-27 08:57:14', 'category': 'tech', 'sentiment': 0.97, 'keyword_mentioned': 'JavaScript', 'message_length': 39}
-2025-09-27 08:57:17 | WARNING | Producer interrupted by user.
-2025-09-27 08:57:17 | INFO | Kafka producer closed.
-2025-09-27 08:57:17 | INFO | Producer shutting down.
-2025-09-27 09:10:20 | INFO | Logging to file: logs/project_log.log
-2025-09-27 09:10:20 | INFO | Log sanitization enabled, personal info removed
-2025-09-27 09:10:45 | INFO | Starting Producer to run continuously.
-2025-09-27 09:10:45 | INFO | Use Ctrl+C to stop.
-2025-09-27 09:10:45 | INFO | MESSAGE_INTERVAL_SECONDS: 5
-2025-09-27 09:10:45 | INFO | BUZZ_TOPIC: buzzline
-2025-09-27 09:10:45 | INFO | KAFKA_BROKER_ADDRESS: 127.0.0.1:9092
-2025-09-27 09:10:45 | INFO | BASE_DATA_DIR: PROJECT_ROOT/data
-2025-09-27 09:10:45 | INFO | LIVE_DATA_PATH: PROJECT_ROOT/data/project_live.json
-2025-09-27 09:10:45 | INFO | BASE_DATA_DIR: PROJECT_ROOT/data
-2025-09-27 09:10:45 | INFO | SQLITE_PATH: PROJECT_ROOT/data/buzz.sqlite
-2025-09-27 09:10:45 | INFO | Deleted existing live data file.
-2025-09-27 09:10:45 | INFO | Kafka broker address: localhost:9092
-2025-09-27 09:10:46 | INFO | Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': '1tJcE6mlTguaBhYaL4Vp7w', 'controller_id': 1}
-2025-09-27 09:10:46 | INFO | Kafka producer connected to 127.0.0.1:9092
-2025-09-27 09:10:46 | INFO | Kafka broker address: localhost:9092
-2025-09-27 09:10:46 | INFO | Topic 'buzzline' already exists. Recreating fresh...
-2025-09-27 09:10:46 | INFO | Requested deletion of topic 'buzzline'.
-2025-09-27 09:10:46 | INFO | Topic 'buzzline' created successfully.
-2025-09-27 09:10:46 | INFO | Kafka topic 'buzzline' is ready.
-2025-09-27 09:10:46 | INFO | {'message': 'I just shared game! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:10:46', 'category': 'gaming', 'sentiment': 0.87, 'keyword_mentioned': 'game', 'message_length': 33}
-2025-09-27 09:10:51 | INFO | {'message': 'I just loved JavaScript! It was funny.', 'author': 'Bob', 'timestamp': '2025-09-27 09:10:51', 'category': 'tech', 'sentiment': 0.36, 'keyword_mentioned': 'JavaScript', 'message_length': 38}
-2025-09-27 09:10:56 | INFO | {'message': 'I just found a meme! It was exciting.', 'author': 'Bob', 'timestamp': '2025-09-27 09:10:56', 'category': 'humor', 'sentiment': 0.79, 'keyword_mentioned': 'meme', 'message_length': 37}
-2025-09-27 09:11:01 | INFO | {'message': 'I just found a meme! It was weird.', 'author': 'Alice', 'timestamp': '2025-09-27 09:11:01', 'category': 'humor', 'sentiment': 0.06, 'keyword_mentioned': 'meme', 'message_length': 34}
-2025-09-27 09:11:05 | INFO | Logging to file: logs/project_log.log
-2025-09-27 09:11:05 | INFO | Log sanitization enabled, personal info removed
-2025-09-27 09:11:06 | INFO | Starting Consumer with MongoDB backend.
-2025-09-27 09:11:06 | INFO | Reading environment variables using config module.
-2025-09-27 09:11:06 | INFO | BUZZ_TOPIC: buzzline
-2025-09-27 09:11:06 | INFO | KAFKA_BROKER_ADDRESS: 127.0.0.1:9092
-2025-09-27 09:11:06 | INFO | BUZZ_CONSUMER_GROUP_ID: buzz_group
-2025-09-27 09:11:06 | INFO | MESSAGE_INTERVAL_SECONDS: 5
-2025-09-27 09:11:06 | INFO | SUCCESS: Read all environment variables.
-2025-09-27 09:11:06 | INFO | MONGODB_URI: mongodb://localhost:27017/
-2025-09-27 09:11:06 | INFO | MONGODB_DB: mongo_buzz_database
-2025-09-27 09:11:06 | INFO | Connected to MongoDB at mongodb://localhost:27017/, DB: mongo_buzz_database
-2025-09-27 09:11:06 | INFO | Called consume_messages_from_kafka() with:
-2025-09-27 09:11:06 | INFO |    topic='buzzline'
-2025-09-27 09:11:06 | INFO |    kafka_url='127.0.0.1:9092'
-2025-09-27 09:11:06 | INFO |    group='buzz_group'
-2025-09-27 09:11:06 | INFO |    sql_path={'MONGO_URI': 'mongodb://localhost:27017', 'DB_NAME': 'my_database'}
-2025-09-27 09:11:06 | INFO |    interval_secs=5
-2025-09-27 09:11:06 | INFO | Step 1. Verify Kafka Services.
-2025-09-27 09:11:06 | INFO | Kafka broker address: localhost:9092
-2025-09-27 09:11:06 | INFO | {'message': 'I just loved a trick! It was exciting.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:11:06', 'category': 'other', 'sentiment': 0.24, 'keyword_mentioned': 'other', 'message_length': 38}
-2025-09-27 09:11:07 | INFO | Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': '1tJcE6mlTguaBhYaL4Vp7w', 'controller_id': 1}
-2025-09-27 09:11:07 | INFO | Step 2. Create a Kafka consumer.
-2025-09-27 09:11:07 | INFO | Kafka broker address: localhost:9092
-2025-09-27 09:11:07 | INFO | Creating Kafka consumer. Topic='buzzline' and group ID='buzz_group'.
-2025-09-27 09:11:07 | INFO | Kafka consumer created successfully.
-2025-09-27 09:11:07 | INFO | Step 3. Verify topic exists.
-2025-09-27 09:11:07 | INFO | Topic 'buzzline' is available. 
-2025-09-27 09:11:07 | INFO | Kafka topic 'buzzline' is ready.
-2025-09-27 09:11:07 | INFO | Step 4. Process messages.
-2025-09-27 09:11:10 | INFO | Called process_message() with:
-2025-09-27 09:11:10 | INFO |    message={'message': 'I just loved JavaScript! It was funny.', 'author': 'Bob', 'timestamp': '2025-09-27 09:10:51', 'category': 'tech', 'sentiment': 0.36, 'keyword_mentioned': 'JavaScript', 'message_length': 38}
-2025-09-27 09:11:10 | INFO | Processed message: {'message': 'I just loved JavaScript! It was funny.', 'author': 'Bob', 'timestamp': '2025-09-27 09:10:51', 'category': 'tech', 'sentiment': 0.36, 'keyword_mentioned': 'JavaScript', 'message_length': 38}
-2025-09-27 09:11:10 | INFO | Calling MongoDB insert_message() with:
-2025-09-27 09:11:10 | INFO | message={'message': 'I just loved JavaScript! It was funny.', 'author': 'Bob', 'timestamp': '2025-09-27 09:10:51', 'category': 'tech', 'sentiment': 0.36, 'keyword_mentioned': 'JavaScript', 'message_length': 38}
-2025-09-27 09:11:10 | INFO | MONGODB_URI: mongodb://localhost:27017/
-2025-09-27 09:11:10 | INFO | MONGODB_DB: mongo_buzz_database
-2025-09-27 09:11:10 | INFO | Inserted message with _id: 68d7f07e9e0582ce83c3771b into collection: messages_tech
-2025-09-27 09:11:10 | INFO | Called process_message() with:
-2025-09-27 09:11:10 | INFO |    message={'message': 'I just found a meme! It was exciting.', 'author': 'Bob', 'timestamp': '2025-09-27 09:10:56', 'category': 'humor', 'sentiment': 0.79, 'keyword_mentioned': 'meme', 'message_length': 37}
-2025-09-27 09:11:10 | INFO | Processed message: {'message': 'I just found a meme! It was exciting.', 'author': 'Bob', 'timestamp': '2025-09-27 09:10:56', 'category': 'humor', 'sentiment': 0.79, 'keyword_mentioned': 'meme', 'message_length': 37}
-2025-09-27 09:11:10 | INFO | Calling MongoDB insert_message() with:
-2025-09-27 09:11:10 | INFO | message={'message': 'I just found a meme! It was exciting.', 'author': 'Bob', 'timestamp': '2025-09-27 09:10:56', 'category': 'humor', 'sentiment': 0.79, 'keyword_mentioned': 'meme', 'message_length': 37}
-2025-09-27 09:11:10 | INFO | MONGODB_URI: mongodb://localhost:27017/
-2025-09-27 09:11:10 | INFO | MONGODB_DB: mongo_buzz_database
-2025-09-27 09:11:10 | INFO | Inserted message with _id: 68d7f07e9e0582ce83c3771d into collection: messages_humor
-2025-09-27 09:11:10 | INFO | Called process_message() with:
-2025-09-27 09:11:10 | INFO |    message={'message': 'I just found a meme! It was weird.', 'author': 'Alice', 'timestamp': '2025-09-27 09:11:01', 'category': 'humor', 'sentiment': 0.06, 'keyword_mentioned': 'meme', 'message_length': 34}
-2025-09-27 09:11:10 | INFO | Processed message: {'message': 'I just found a meme! It was weird.', 'author': 'Alice', 'timestamp': '2025-09-27 09:11:01', 'category': 'humor', 'sentiment': 0.06, 'keyword_mentioned': 'meme', 'message_length': 34}
-2025-09-27 09:11:10 | INFO | Calling MongoDB insert_message() with:
-2025-09-27 09:11:10 | INFO | message={'message': 'I just found a meme! It was weird.', 'author': 'Alice', 'timestamp': '2025-09-27 09:11:01', 'category': 'humor', 'sentiment': 0.06, 'keyword_mentioned': 'meme', 'message_length': 34}
-2025-09-27 09:11:10 | INFO | MONGODB_URI: mongodb://localhost:27017/
-2025-09-27 09:11:10 | INFO | MONGODB_DB: mongo_buzz_database
-2025-09-27 09:11:10 | INFO | Inserted message with _id: 68d7f07e9e0582ce83c3771f into collection: messages_humor
-2025-09-27 09:11:10 | INFO | Called process_message() with:
-2025-09-27 09:11:10 | INFO |    message={'message': 'I just loved a trick! It was exciting.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:11:06', 'category': 'other', 'sentiment': 0.24, 'keyword_mentioned': 'other', 'message_length': 38}
-2025-09-27 09:11:10 | INFO | Processed message: {'message': 'I just loved a trick! It was exciting.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:11:06', 'category': 'other', 'sentiment': 0.24, 'keyword_mentioned': 'other', 'message_length': 38}
-2025-09-27 09:11:10 | INFO | Calling MongoDB insert_message() with:
-2025-09-27 09:11:10 | INFO | message={'message': 'I just loved a trick! It was exciting.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:11:06', 'category': 'other', 'sentiment': 0.24, 'keyword_mentioned': 'other', 'message_length': 38}
-2025-09-27 09:11:10 | INFO | MONGODB_URI: mongodb://localhost:27017/
-2025-09-27 09:11:10 | INFO | MONGODB_DB: mongo_buzz_database
-2025-09-27 09:11:10 | INFO | Inserted message with _id: 68d7f07e9e0582ce83c37721 into collection: messages_other
-2025-09-27 09:11:11 | INFO | {'message': 'I just shared a movie! It was funny.', 'author': 'Alice', 'timestamp': '2025-09-27 09:11:11', 'category': 'entertainment', 'sentiment': 0.67, 'keyword_mentioned': 'movie', 'message_length': 36}
-2025-09-27 09:11:12 | INFO | Called process_message() with:
-2025-09-27 09:11:12 | INFO |    message={'message': 'I just shared a movie! It was funny.', 'author': 'Alice', 'timestamp': '2025-09-27 09:11:11', 'category': 'entertainment', 'sentiment': 0.67, 'keyword_mentioned': 'movie', 'message_length': 36}
-2025-09-27 09:11:12 | INFO | Processed message: {'message': 'I just shared a movie! It was funny.', 'author': 'Alice', 'timestamp': '2025-09-27 09:11:11', 'category': 'entertainment', 'sentiment': 0.67, 'keyword_mentioned': 'movie', 'message_length': 36}
-2025-09-27 09:11:12 | INFO | Calling MongoDB insert_message() with:
-2025-09-27 09:11:12 | INFO | message={'message': 'I just shared a movie! It was funny.', 'author': 'Alice', 'timestamp': '2025-09-27 09:11:11', 'category': 'entertainment', 'sentiment': 0.67, 'keyword_mentioned': 'movie', 'message_length': 36}
-2025-09-27 09:11:12 | INFO | MONGODB_URI: mongodb://localhost:27017/
-2025-09-27 09:11:12 | INFO | MONGODB_DB: mongo_buzz_database
-2025-09-27 09:11:12 | INFO | Inserted message with _id: 68d7f0809e0582ce83c37723 into collection: messages_entertainment
-2025-09-27 09:11:17 | INFO | {'message': 'I just shared an app! It was exciting.', 'author': 'Bob', 'timestamp': '2025-09-27 09:11:17', 'category': 'other', 'sentiment': 0.44, 'keyword_mentioned': 'other', 'message_length': 38}
-2025-09-27 09:11:17 | INFO | Called process_message() with:
-2025-09-27 09:11:17 | INFO |    message={'message': 'I just shared an app! It was exciting.', 'author': 'Bob', 'timestamp': '2025-09-27 09:11:17', 'category': 'other', 'sentiment': 0.44, 'keyword_mentioned': 'other', 'message_length': 38}
-2025-09-27 09:11:17 | INFO | Processed message: {'message': 'I just shared an app! It was exciting.', 'author': 'Bob', 'timestamp': '2025-09-27 09:11:17', 'category': 'other', 'sentiment': 0.44, 'keyword_mentioned': 'other', 'message_length': 38}
-2025-09-27 09:11:17 | INFO | Calling MongoDB insert_message() with:
-2025-09-27 09:11:17 | INFO | message={'message': 'I just shared an app! It was exciting.', 'author': 'Bob', 'timestamp': '2025-09-27 09:11:17', 'category': 'other', 'sentiment': 0.44, 'keyword_mentioned': 'other', 'message_length': 38}
-2025-09-27 09:11:17 | INFO | MONGODB_URI: mongodb://localhost:27017/
-2025-09-27 09:11:17 | INFO | MONGODB_DB: mongo_buzz_database
-2025-09-27 09:11:17 | INFO | Inserted message with _id: 68d7f0859e0582ce83c37725 into collection: messages_other
-2025-09-27 09:11:22 | INFO | {'message': 'I just tried an app! It was boring.', 'author': 'Alice', 'timestamp': '2025-09-27 09:11:22', 'category': 'other', 'sentiment': 0.43, 'keyword_mentioned': 'other', 'message_length': 35}
-2025-09-27 09:11:22 | INFO | Called process_message() with:
-2025-09-27 09:11:22 | INFO |    message={'message': 'I just tried an app! It was boring.', 'author': 'Alice', 'timestamp': '2025-09-27 09:11:22', 'category': 'other', 'sentiment': 0.43, 'keyword_mentioned': 'other', 'message_length': 35}
-2025-09-27 09:11:22 | INFO | Processed message: {'message': 'I just tried an app! It was boring.', 'author': 'Alice', 'timestamp': '2025-09-27 09:11:22', 'category': 'other', 'sentiment': 0.43, 'keyword_mentioned': 'other', 'message_length': 35}
-2025-09-27 09:11:22 | INFO | Calling MongoDB insert_message() with:
-2025-09-27 09:11:22 | INFO | message={'message': 'I just tried an app! It was boring.', 'author': 'Alice', 'timestamp': '2025-09-27 09:11:22', 'category': 'other', 'sentiment': 0.43, 'keyword_mentioned': 'other', 'message_length': 35}
-2025-09-27 09:11:22 | INFO | MONGODB_URI: mongodb://localhost:27017/
-2025-09-27 09:11:22 | INFO | MONGODB_DB: mongo_buzz_database
-2025-09-27 09:11:22 | INFO | Inserted message with _id: 68d7f08a9e0582ce83c37727 into collection: messages_other
-2025-09-27 09:11:27 | INFO | {'message': 'I just loved game! It was exciting.', 'author': 'Alice', 'timestamp': '2025-09-27 09:11:27', 'category': 'gaming', 'sentiment': 0.61, 'keyword_mentioned': 'game', 'message_length': 35}
-2025-09-27 09:11:27 | INFO | Called process_message() with:
-2025-09-27 09:11:27 | INFO |    message={'message': 'I just loved game! It was exciting.', 'author': 'Alice', 'timestamp': '2025-09-27 09:11:27', 'category': 'gaming', 'sentiment': 0.61, 'keyword_mentioned': 'game', 'message_length': 35}
-2025-09-27 09:11:27 | INFO | Processed message: {'message': 'I just loved game! It was exciting.', 'author': 'Alice', 'timestamp': '2025-09-27 09:11:27', 'category': 'gaming', 'sentiment': 0.61, 'keyword_mentioned': 'game', 'message_length': 35}
-2025-09-27 09:11:27 | INFO | Calling MongoDB insert_message() with:
-2025-09-27 09:11:27 | INFO | message={'message': 'I just loved game! It was exciting.', 'author': 'Alice', 'timestamp': '2025-09-27 09:11:27', 'category': 'gaming', 'sentiment': 0.61, 'keyword_mentioned': 'game', 'message_length': 35}
-2025-09-27 09:11:27 | INFO | MONGODB_URI: mongodb://localhost:27017/
-2025-09-27 09:11:27 | INFO | MONGODB_DB: mongo_buzz_database
-2025-09-27 09:11:27 | INFO | Inserted message with _id: 68d7f08f9e0582ce83c37729 into collection: messages_gaming
-2025-09-27 09:11:32 | INFO | {'message': 'I just loved Python! It was exciting.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:11:32', 'category': 'tech', 'sentiment': 0.15, 'keyword_mentioned': 'Python', 'message_length': 37}
-2025-09-27 09:11:32 | INFO | Called process_message() with:
-2025-09-27 09:11:32 | INFO |    message={'message': 'I just loved Python! It was exciting.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:11:32', 'category': 'tech', 'sentiment': 0.15, 'keyword_mentioned': 'Python', 'message_length': 37}
-2025-09-27 09:11:32 | INFO | Processed message: {'message': 'I just loved Python! It was exciting.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:11:32', 'category': 'tech', 'sentiment': 0.15, 'keyword_mentioned': 'Python', 'message_length': 37}
-2025-09-27 09:11:32 | INFO | Calling MongoDB insert_message() with:
-2025-09-27 09:11:32 | INFO | message={'message': 'I just loved Python! It was exciting.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:11:32', 'category': 'tech', 'sentiment': 0.15, 'keyword_mentioned': 'Python', 'message_length': 37}
-2025-09-27 09:11:32 | INFO | MONGODB_URI: mongodb://localhost:27017/
-2025-09-27 09:11:32 | INFO | MONGODB_DB: mongo_buzz_database
-2025-09-27 09:11:32 | INFO | Inserted message with _id: 68d7f0949e0582ce83c3772b into collection: messages_tech
-2025-09-27 09:11:37 | INFO | {'message': 'I just found a story! It was weird.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:11:37', 'category': 'other', 'sentiment': 0.54, 'keyword_mentioned': 'other', 'message_length': 35}
-2025-09-27 09:11:37 | INFO | Called process_message() with:
-2025-09-27 09:11:37 | INFO |    message={'message': 'I just found a story! It was weird.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:11:37', 'category': 'other', 'sentiment': 0.54, 'keyword_mentioned': 'other', 'message_length': 35}
-2025-09-27 09:11:37 | INFO | Processed message: {'message': 'I just found a story! It was weird.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:11:37', 'category': 'other', 'sentiment': 0.54, 'keyword_mentioned': 'other', 'message_length': 35}
-2025-09-27 09:11:37 | INFO | Calling MongoDB insert_message() with:
-2025-09-27 09:11:37 | INFO | message={'message': 'I just found a story! It was weird.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:11:37', 'category': 'other', 'sentiment': 0.54, 'keyword_mentioned': 'other', 'message_length': 35}
-2025-09-27 09:11:37 | INFO | MONGODB_URI: mongodb://localhost:27017/
-2025-09-27 09:11:37 | INFO | MONGODB_DB: mongo_buzz_database
-2025-09-27 09:11:37 | INFO | Inserted message with _id: 68d7f0999e0582ce83c3772d into collection: messages_other
-2025-09-27 09:11:42 | INFO | {'message': 'I just shared travel! It was exciting.', 'author': 'Alice', 'timestamp': '2025-09-27 09:11:42', 'category': 'travel', 'sentiment': 0.95, 'keyword_mentioned': 'travel', 'message_length': 38}
-2025-09-27 09:11:42 | INFO | Called process_message() with:
-2025-09-27 09:11:42 | INFO |    message={'message': 'I just shared travel! It was exciting.', 'author': 'Alice', 'timestamp': '2025-09-27 09:11:42', 'category': 'travel', 'sentiment': 0.95, 'keyword_mentioned': 'travel', 'message_length': 38}
-2025-09-27 09:11:42 | INFO | Processed message: {'message': 'I just shared travel! It was exciting.', 'author': 'Alice', 'timestamp': '2025-09-27 09:11:42', 'category': 'travel', 'sentiment': 0.95, 'keyword_mentioned': 'travel', 'message_length': 38}
-2025-09-27 09:11:42 | INFO | Calling MongoDB insert_message() with:
-2025-09-27 09:11:42 | INFO | message={'message': 'I just shared travel! It was exciting.', 'author': 'Alice', 'timestamp': '2025-09-27 09:11:42', 'category': 'travel', 'sentiment': 0.95, 'keyword_mentioned': 'travel', 'message_length': 38}
-2025-09-27 09:11:42 | INFO | MONGODB_URI: mongodb://localhost:27017/
-2025-09-27 09:11:42 | INFO | MONGODB_DB: mongo_buzz_database
-2025-09-27 09:11:42 | INFO | Inserted message with _id: 68d7f09e9e0582ce83c3772f into collection: messages_travel
-2025-09-27 09:11:47 | INFO | {'message': 'I just shared a trick! It was boring.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:11:47', 'category': 'other', 'sentiment': 0.17, 'keyword_mentioned': 'other', 'message_length': 37}
-2025-09-27 09:11:47 | INFO | Called process_message() with:
-2025-09-27 09:11:47 | INFO |    message={'message': 'I just shared a trick! It was boring.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:11:47', 'category': 'other', 'sentiment': 0.17, 'keyword_mentioned': 'other', 'message_length': 37}
-2025-09-27 09:11:47 | INFO | Processed message: {'message': 'I just shared a trick! It was boring.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:11:47', 'category': 'other', 'sentiment': 0.17, 'keyword_mentioned': 'other', 'message_length': 37}
-2025-09-27 09:11:47 | INFO | Calling MongoDB insert_message() with:
-2025-09-27 09:11:47 | INFO | message={'message': 'I just shared a trick! It was boring.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:11:47', 'category': 'other', 'sentiment': 0.17, 'keyword_mentioned': 'other', 'message_length': 37}
-2025-09-27 09:11:47 | INFO | MONGODB_URI: mongodb://localhost:27017/
-2025-09-27 09:11:47 | INFO | MONGODB_DB: mongo_buzz_database
-2025-09-27 09:11:47 | INFO | Inserted message with _id: 68d7f0a39e0582ce83c37731 into collection: messages_other
-2025-09-27 09:11:50 | WARNING | Consumer interrupted by user.
-2025-09-27 09:11:50 | INFO | Consumer shutting down.
+2025-09-27 09:26:22 | INFO | {'message': 'I just found travel! It was amazing.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:26:22', 'category': 'travel', 'sentiment': 0.8, 'keyword_mentioned': 'travel', 'message_length': 36}
+2025-09-27 09:26:27 | INFO | {'message': 'I just loved a movie! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:26:27', 'category': 'entertainment', 'sentiment': 0.33, 'keyword_mentioned': 'movie', 'message_length': 35}
+2025-09-27 09:26:32 | INFO | {'message': 'I just tried Python! It was amazing.', 'author': 'Bob', 'timestamp': '2025-09-27 09:26:32', 'category': 'tech', 'sentiment': 0.87, 'keyword_mentioned': 'Python', 'message_length': 36}
+2025-09-27 09:26:37 | INFO | {'message': 'I just loved a story! It was weird.', 'author': 'Alice', 'timestamp': '2025-09-27 09:26:37', 'category': 'other', 'sentiment': 0.94, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-09-27 09:26:42 | INFO | {'message': 'I just found a story! It was amazing.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:26:42', 'category': 'other', 'sentiment': 0.01, 'keyword_mentioned': 'other', 'message_length': 37}
+2025-09-27 09:26:45 | WARNING | Producer interrupted by user.
+2025-09-27 09:26:45 | INFO | Kafka producer closed.
+2025-09-27 09:26:45 | INFO | Producer shutting down.
+2025-09-27 09:28:18 | INFO | Logging to file: logs/project_log.log
+2025-09-27 09:28:18 | INFO | Log sanitization enabled, personal info removed
+2025-09-27 09:28:19 | INFO | Starting Producer to run continuously.
+2025-09-27 09:28:19 | INFO | Use Ctrl+C to stop.
+2025-09-27 09:28:19 | INFO | MESSAGE_INTERVAL_SECONDS: 5
+2025-09-27 09:28:19 | INFO | BUZZ_TOPIC: buzzline
+2025-09-27 09:28:19 | INFO | KAFKA_BROKER_ADDRESS: 127.0.0.1:9092
+2025-09-27 09:28:19 | INFO | BASE_DATA_DIR: PROJECT_ROOT/data
+2025-09-27 09:28:19 | INFO | LIVE_DATA_PATH: PROJECT_ROOT/data/project_live.json
+2025-09-27 09:28:19 | INFO | BASE_DATA_DIR: PROJECT_ROOT/data
+2025-09-27 09:28:19 | INFO | SQLITE_PATH: PROJECT_ROOT/data/buzz.sqlite
+2025-09-27 09:28:19 | INFO | Deleted existing live data file.
+2025-09-27 09:28:19 | INFO | Kafka broker address: localhost:9092
+2025-09-27 09:28:19 | INFO | Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': '1tJcE6mlTguaBhYaL4Vp7w', 'controller_id': 1}
+2025-09-27 09:28:19 | INFO | Kafka producer connected to 127.0.0.1:9092
+2025-09-27 09:28:19 | INFO | Kafka broker address: localhost:9092
+2025-09-27 09:28:20 | INFO | Topic 'buzzline' already exists. Recreating fresh...
+2025-09-27 09:28:20 | INFO | Requested deletion of topic 'buzzline'.
+2025-09-27 09:28:20 | INFO | Topic 'buzzline' created successfully.
+2025-09-27 09:28:20 | INFO | Kafka topic 'buzzline' is ready.
+2025-09-27 09:28:20 | INFO | {'message': 'I just shared travel! It was weird.', 'author': 'Bob', 'timestamp': '2025-09-27 09:28:20', 'category': 'travel', 'sentiment': 0.62, 'keyword_mentioned': 'travel', 'message_length': 35}
+2025-09-27 09:28:25 | INFO | {'message': 'I just tried travel! It was funny.', 'author': 'Alice', 'timestamp': '2025-09-27 09:28:25', 'category': 'travel', 'sentiment': 0.32, 'keyword_mentioned': 'travel', 'message_length': 34}
+2025-09-27 09:28:30 | INFO | {'message': 'I just saw a movie! It was weird.', 'author': 'Bob', 'timestamp': '2025-09-27 09:28:30', 'category': 'entertainment', 'sentiment': 0.77, 'keyword_mentioned': 'movie', 'message_length': 33}
+2025-09-27 09:28:32 | INFO | Logging to file: logs/project_log.log
+2025-09-27 09:28:32 | INFO | Log sanitization enabled, personal info removed
+2025-09-27 09:28:33 | INFO | Starting Consumer with MongoDB backend.
+2025-09-27 09:28:33 | INFO | Reading environment variables using config module.
+2025-09-27 09:28:33 | INFO | BUZZ_TOPIC: buzzline
+2025-09-27 09:28:33 | INFO | KAFKA_BROKER_ADDRESS: 127.0.0.1:9092
+2025-09-27 09:28:33 | INFO | BUZZ_CONSUMER_GROUP_ID: buzz_group
+2025-09-27 09:28:33 | INFO | MESSAGE_INTERVAL_SECONDS: 5
+2025-09-27 09:28:33 | INFO | SUCCESS: Read all environment variables.
+2025-09-27 09:28:33 | INFO | MONGODB_URI: mongodb://localhost:27017/
+2025-09-27 09:28:33 | INFO | MONGODB_DB: mongo_buzz_database
+2025-09-27 09:28:33 | INFO | Connected to MongoDB at mongodb://localhost:27017/, DB: mongo_buzz_database
+2025-09-27 09:28:33 | INFO | Called consume_messages_from_kafka() with:
+2025-09-27 09:28:33 | INFO |    topic='buzzline'
+2025-09-27 09:28:33 | INFO |    kafka_url='127.0.0.1:9092'
+2025-09-27 09:28:33 | INFO |    group='buzz_group'
+2025-09-27 09:28:33 | INFO |    sql_path={'MONGO_URI': 'mongodb://localhost:27017', 'DB_NAME': 'my_database'}
+2025-09-27 09:28:33 | INFO |    interval_secs=5
+2025-09-27 09:28:33 | INFO | Step 1. Verify Kafka Services.
+2025-09-27 09:28:33 | INFO | Kafka broker address: localhost:9092
+2025-09-27 09:28:33 | INFO | Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': '1tJcE6mlTguaBhYaL4Vp7w', 'controller_id': 1}
+2025-09-27 09:28:33 | INFO | Step 2. Create a Kafka consumer.
+2025-09-27 09:28:33 | INFO | Kafka broker address: localhost:9092
+2025-09-27 09:28:33 | INFO | Creating Kafka consumer. Topic='buzzline' and group ID='buzz_group'.
+2025-09-27 09:28:33 | INFO | Kafka consumer created successfully.
+2025-09-27 09:28:33 | INFO | Step 3. Verify topic exists.
+2025-09-27 09:28:33 | INFO | Topic 'buzzline' is available. 
+2025-09-27 09:28:33 | INFO | Kafka topic 'buzzline' is ready.
+2025-09-27 09:28:33 | INFO | Step 4. Process messages.
+2025-09-27 09:28:35 | INFO | {'message': 'I just tried a movie! It was exciting.', 'author': 'Bob', 'timestamp': '2025-09-27 09:28:35', 'category': 'entertainment', 'sentiment': 0.32, 'keyword_mentioned': 'movie', 'message_length': 38}
+2025-09-27 09:28:36 | INFO | Called process_message() with:
+2025-09-27 09:28:36 | INFO |    message={'message': 'I just tried travel! It was funny.', 'author': 'Alice', 'timestamp': '2025-09-27 09:28:25', 'category': 'travel', 'sentiment': 0.32, 'keyword_mentioned': 'travel', 'message_length': 34}
+2025-09-27 09:28:36 | INFO | Processed message: {'message': 'I just tried travel! It was funny.', 'author': 'Alice', 'timestamp': '2025-09-27 09:28:25', 'category': 'travel', 'sentiment': 0.32, 'keyword_mentioned': 'travel', 'message_length': 34}
+2025-09-27 09:28:36 | INFO | Calling MongoDB insert_message() with:
+2025-09-27 09:28:36 | INFO | message={'message': 'I just tried travel! It was funny.', 'author': 'Alice', 'timestamp': '2025-09-27 09:28:25', 'category': 'travel', 'sentiment': 0.32, 'keyword_mentioned': 'travel', 'message_length': 34}
+2025-09-27 09:28:36 | INFO | MONGODB_URI: mongodb://localhost:27017/
+2025-09-27 09:28:36 | INFO | MONGODB_DB: mongo_buzz_database
+2025-09-27 09:28:37 | INFO | Inserted message with _id: 68d7f4951559104e22f5d33d into collection: messages_travel
+2025-09-27 09:28:37 | INFO | Called process_message() with:
+2025-09-27 09:28:37 | INFO |    message={'message': 'I just saw a movie! It was weird.', 'author': 'Bob', 'timestamp': '2025-09-27 09:28:30', 'category': 'entertainment', 'sentiment': 0.77, 'keyword_mentioned': 'movie', 'message_length': 33}
+2025-09-27 09:28:37 | INFO | Processed message: {'message': 'I just saw a movie! It was weird.', 'author': 'Bob', 'timestamp': '2025-09-27 09:28:30', 'category': 'entertainment', 'sentiment': 0.77, 'keyword_mentioned': 'movie', 'message_length': 33}
+2025-09-27 09:28:37 | INFO | Calling MongoDB insert_message() with:
+2025-09-27 09:28:37 | INFO | message={'message': 'I just saw a movie! It was weird.', 'author': 'Bob', 'timestamp': '2025-09-27 09:28:30', 'category': 'entertainment', 'sentiment': 0.77, 'keyword_mentioned': 'movie', 'message_length': 33}
+2025-09-27 09:28:37 | INFO | MONGODB_URI: mongodb://localhost:27017/
+2025-09-27 09:28:37 | INFO | MONGODB_DB: mongo_buzz_database
+2025-09-27 09:28:38 | INFO | Inserted message with _id: 68d7f4951559104e22f5d33f into collection: messages_entertainment
+2025-09-27 09:28:38 | INFO | Called process_message() with:
+2025-09-27 09:28:38 | INFO |    message={'message': 'I just tried a movie! It was exciting.', 'author': 'Bob', 'timestamp': '2025-09-27 09:28:35', 'category': 'entertainment', 'sentiment': 0.32, 'keyword_mentioned': 'movie', 'message_length': 38}
+2025-09-27 09:28:38 | INFO | Processed message: {'message': 'I just tried a movie! It was exciting.', 'author': 'Bob', 'timestamp': '2025-09-27 09:28:35', 'category': 'entertainment', 'sentiment': 0.32, 'keyword_mentioned': 'movie', 'message_length': 38}
+2025-09-27 09:28:38 | INFO | Calling MongoDB insert_message() with:
+2025-09-27 09:28:38 | INFO | message={'message': 'I just tried a movie! It was exciting.', 'author': 'Bob', 'timestamp': '2025-09-27 09:28:35', 'category': 'entertainment', 'sentiment': 0.32, 'keyword_mentioned': 'movie', 'message_length': 38}
+2025-09-27 09:28:38 | INFO | MONGODB_URI: mongodb://localhost:27017/
+2025-09-27 09:28:38 | INFO | MONGODB_DB: mongo_buzz_database
+2025-09-27 09:28:39 | INFO | Inserted message with _id: 68d7f4971559104e22f5d341 into collection: messages_entertainment
+2025-09-27 09:28:40 | INFO | {'message': 'I just shared recipe! It was weird.', 'author': 'Bob', 'timestamp': '2025-09-27 09:28:40', 'category': 'food', 'sentiment': 0.44, 'keyword_mentioned': 'recipe', 'message_length': 35}
+2025-09-27 09:28:40 | INFO | Called process_message() with:
+2025-09-27 09:28:40 | INFO |    message={'message': 'I just shared recipe! It was weird.', 'author': 'Bob', 'timestamp': '2025-09-27 09:28:40', 'category': 'food', 'sentiment': 0.44, 'keyword_mentioned': 'recipe', 'message_length': 35}
+2025-09-27 09:28:40 | INFO | Processed message: {'message': 'I just shared recipe! It was weird.', 'author': 'Bob', 'timestamp': '2025-09-27 09:28:40', 'category': 'food', 'sentiment': 0.44, 'keyword_mentioned': 'recipe', 'message_length': 35}
+2025-09-27 09:28:40 | INFO | Calling MongoDB insert_message() with:
+2025-09-27 09:28:40 | INFO | message={'message': 'I just shared recipe! It was weird.', 'author': 'Bob', 'timestamp': '2025-09-27 09:28:40', 'category': 'food', 'sentiment': 0.44, 'keyword_mentioned': 'recipe', 'message_length': 35}
+2025-09-27 09:28:40 | INFO | MONGODB_URI: mongodb://localhost:27017/
+2025-09-27 09:28:40 | INFO | MONGODB_DB: mongo_buzz_database
+2025-09-27 09:28:41 | INFO | Inserted message with _id: 68d7f4981559104e22f5d343 into collection: messages_food
+2025-09-27 09:28:45 | INFO | {'message': 'I just found a meme! It was boring.', 'author': 'Bob', 'timestamp': '2025-09-27 09:28:45', 'category': 'humor', 'sentiment': 0.53, 'keyword_mentioned': 'meme', 'message_length': 35}
+2025-09-27 09:28:45 | INFO | Called process_message() with:
+2025-09-27 09:28:45 | INFO |    message={'message': 'I just found a meme! It was boring.', 'author': 'Bob', 'timestamp': '2025-09-27 09:28:45', 'category': 'humor', 'sentiment': 0.53, 'keyword_mentioned': 'meme', 'message_length': 35}
+2025-09-27 09:28:45 | INFO | Processed message: {'message': 'I just found a meme! It was boring.', 'author': 'Bob', 'timestamp': '2025-09-27 09:28:45', 'category': 'humor', 'sentiment': 0.53, 'keyword_mentioned': 'meme', 'message_length': 35}
+2025-09-27 09:28:45 | INFO | Calling MongoDB insert_message() with:
+2025-09-27 09:28:45 | INFO | message={'message': 'I just found a meme! It was boring.', 'author': 'Bob', 'timestamp': '2025-09-27 09:28:45', 'category': 'humor', 'sentiment': 0.53, 'keyword_mentioned': 'meme', 'message_length': 35}
+2025-09-27 09:28:45 | INFO | MONGODB_URI: mongodb://localhost:27017/
+2025-09-27 09:28:45 | INFO | MONGODB_DB: mongo_buzz_database
+2025-09-27 09:28:46 | INFO | Inserted message with _id: 68d7f49d1559104e22f5d345 into collection: messages_humor
+2025-09-27 09:28:50 | INFO | {'message': 'I just loved a meme! It was funny.', 'author': 'Alice', 'timestamp': '2025-09-27 09:28:50', 'category': 'humor', 'sentiment': 0.65, 'keyword_mentioned': 'meme', 'message_length': 34}
+2025-09-27 09:28:50 | INFO | Called process_message() with:
+2025-09-27 09:28:50 | INFO |    message={'message': 'I just loved a meme! It was funny.', 'author': 'Alice', 'timestamp': '2025-09-27 09:28:50', 'category': 'humor', 'sentiment': 0.65, 'keyword_mentioned': 'meme', 'message_length': 34}
+2025-09-27 09:28:50 | INFO | Processed message: {'message': 'I just loved a meme! It was funny.', 'author': 'Alice', 'timestamp': '2025-09-27 09:28:50', 'category': 'humor', 'sentiment': 0.65, 'keyword_mentioned': 'meme', 'message_length': 34}
+2025-09-27 09:28:50 | INFO | Calling MongoDB insert_message() with:
+2025-09-27 09:28:50 | INFO | message={'message': 'I just loved a meme! It was funny.', 'author': 'Alice', 'timestamp': '2025-09-27 09:28:50', 'category': 'humor', 'sentiment': 0.65, 'keyword_mentioned': 'meme', 'message_length': 34}
+2025-09-27 09:28:50 | INFO | MONGODB_URI: mongodb://localhost:27017/
+2025-09-27 09:28:50 | INFO | MONGODB_DB: mongo_buzz_database
+2025-09-27 09:28:50 | INFO | Inserted message with _id: 68d7f4a21559104e22f5d347 into collection: messages_humor
+2025-09-27 09:28:54 | WARNING | Consumer interrupted by user.
+2025-09-27 09:28:54 | INFO | Consumer shutting down.
+2025-09-27 09:28:55 | INFO | {'message': 'I just loved a movie! It was exciting.', 'author': 'Alice', 'timestamp': '2025-09-27 09:28:55', 'category': 'entertainment', 'sentiment': 0.1, 'keyword_mentioned': 'movie', 'message_length': 38}
+2025-09-27 09:28:56 | WARNING | Producer interrupted by user.
+2025-09-27 09:28:56 | INFO | Kafka producer closed.
+2025-09-27 09:28:56 | INFO | Producer shutting down.
+2025-09-27 09:37:56 | INFO | Logging to file: logs/project_log.log
+2025-09-27 09:37:56 | INFO | Log sanitization enabled, personal info removed
+2025-09-27 09:37:56 | INFO | Starting Producer to run continuously.
+2025-09-27 09:37:56 | INFO | Use Ctrl+C to stop.
+2025-09-27 09:37:56 | INFO | MESSAGE_INTERVAL_SECONDS: 5
+2025-09-27 09:37:56 | INFO | BUZZ_TOPIC: buzzline
+2025-09-27 09:37:56 | INFO | KAFKA_BROKER_ADDRESS: 127.0.0.1:9092
+2025-09-27 09:37:56 | INFO | BASE_DATA_DIR: PROJECT_ROOT/data
+2025-09-27 09:37:56 | INFO | LIVE_DATA_PATH: PROJECT_ROOT/data/project_live.json
+2025-09-27 09:37:56 | INFO | BASE_DATA_DIR: PROJECT_ROOT/data
+2025-09-27 09:37:56 | INFO | SQLITE_PATH: PROJECT_ROOT/data/buzz.sqlite
+2025-09-27 09:37:56 | INFO | Deleted existing live data file.
+2025-09-27 09:37:56 | INFO | Kafka broker address: localhost:9092
+2025-09-27 09:37:57 | INFO | Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': '1tJcE6mlTguaBhYaL4Vp7w', 'controller_id': 1}
+2025-09-27 09:37:57 | INFO | Kafka producer connected to 127.0.0.1:9092
+2025-09-27 09:37:57 | INFO | Kafka broker address: localhost:9092
+2025-09-27 09:37:57 | INFO | Topic 'buzzline' already exists. Recreating fresh...
+2025-09-27 09:37:57 | INFO | Requested deletion of topic 'buzzline'.
+2025-09-27 09:37:58 | INFO | Topic 'buzzline' created successfully.
+2025-09-27 09:37:58 | INFO | Kafka topic 'buzzline' is ready.
+2025-09-27 09:37:58 | INFO | {'message': 'I just loved Python! It was boring.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:37:58', 'category': 'tech', 'sentiment': 0.23, 'keyword_mentioned': 'Python', 'message_length': 35}
+2025-09-27 09:38:03 | INFO | {'message': 'I just shared a movie! It was amazing.', 'author': 'Eve', 'timestamp': '2025-09-27 09:38:03', 'category': 'entertainment', 'sentiment': 0.41, 'keyword_mentioned': 'movie', 'message_length': 38}
+2025-09-27 09:38:08 | INFO | {'message': 'I just shared an app! It was amazing.', 'author': 'Bob', 'timestamp': '2025-09-27 09:38:08', 'category': 'other', 'sentiment': 0.83, 'keyword_mentioned': 'other', 'message_length': 37}
+2025-09-27 09:38:10 | INFO | Logging to file: logs/project_log.log
+2025-09-27 09:38:10 | INFO | Log sanitization enabled, personal info removed
+2025-09-27 09:38:11 | INFO | Starting Consumer with MongoDB backend.
+2025-09-27 09:38:11 | INFO | Reading environment variables using config module.
+2025-09-27 09:38:11 | INFO | BUZZ_TOPIC: buzzline
+2025-09-27 09:38:11 | INFO | KAFKA_BROKER_ADDRESS: 127.0.0.1:9092
+2025-09-27 09:38:11 | INFO | BUZZ_CONSUMER_GROUP_ID: buzz_group
+2025-09-27 09:38:11 | INFO | MESSAGE_INTERVAL_SECONDS: 5
+2025-09-27 09:38:11 | INFO | SUCCESS: Read all environment variables.
+2025-09-27 09:38:11 | INFO | MONGODB_URI: mongodb://localhost:27017/
+2025-09-27 09:38:11 | INFO | MONGODB_DB: mongo_buzz_database
+2025-09-27 09:38:11 | INFO | Connected to MongoDB at mongodb://localhost:27017/, DB: mongo_buzz_database
+2025-09-27 09:38:11 | INFO | Called consume_messages_from_kafka() with:
+2025-09-27 09:38:11 | INFO |    topic='buzzline'
+2025-09-27 09:38:11 | INFO |    kafka_url='127.0.0.1:9092'
+2025-09-27 09:38:11 | INFO |    group='buzz_group'
+2025-09-27 09:38:11 | INFO |    sql_path={'MONGO_URI': 'mongodb://localhost:27017', 'DB_NAME': 'my_database'}
+2025-09-27 09:38:11 | INFO |    interval_secs=5
+2025-09-27 09:38:11 | INFO | Step 1. Verify Kafka Services.
+2025-09-27 09:38:11 | INFO | Kafka broker address: localhost:9092
+2025-09-27 09:38:11 | INFO | Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 1, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': '1tJcE6mlTguaBhYaL4Vp7w', 'controller_id': 1}
+2025-09-27 09:38:11 | INFO | Step 2. Create a Kafka consumer.
+2025-09-27 09:38:11 | INFO | Kafka broker address: localhost:9092
+2025-09-27 09:38:11 | INFO | Creating Kafka consumer. Topic='buzzline' and group ID='buzz_group'.
+2025-09-27 09:38:11 | INFO | Kafka consumer created successfully.
+2025-09-27 09:38:11 | INFO | Step 3. Verify topic exists.
+2025-09-27 09:38:11 | INFO | Topic 'buzzline' is available. 
+2025-09-27 09:38:12 | INFO | Kafka topic 'buzzline' is ready.
+2025-09-27 09:38:12 | INFO | Step 4. Process messages.
+2025-09-27 09:38:13 | INFO | {'message': 'I just tried JavaScript! It was exciting.', 'author': 'Bob', 'timestamp': '2025-09-27 09:38:13', 'category': 'tech', 'sentiment': 0.98, 'keyword_mentioned': 'JavaScript', 'message_length': 41}
+2025-09-27 09:38:15 | INFO | Called process_message() with:
+2025-09-27 09:38:15 | INFO |    message={'message': 'I just shared a movie! It was amazing.', 'author': 'Eve', 'timestamp': '2025-09-27 09:38:03', 'category': 'entertainment', 'sentiment': 0.41, 'keyword_mentioned': 'movie', 'message_length': 38}
+2025-09-27 09:38:15 | INFO | Processed message: {'message': 'I just shared a movie! It was amazing.', 'author': 'Eve', 'timestamp': '2025-09-27 09:38:03', 'category': 'entertainment', 'sentiment': 0.41, 'keyword_mentioned': 'movie', 'message_length': 38}
+2025-09-27 09:38:15 | INFO | Calling MongoDB insert_message() with:
+2025-09-27 09:38:15 | INFO | message={'message': 'I just shared a movie! It was amazing.', 'author': 'Eve', 'timestamp': '2025-09-27 09:38:03', 'category': 'entertainment', 'sentiment': 0.41, 'keyword_mentioned': 'movie', 'message_length': 38}
+2025-09-27 09:38:15 | INFO | MONGODB_URI: mongodb://localhost:27017/
+2025-09-27 09:38:15 | INFO | MONGODB_DB: mongo_buzz_database
+2025-09-27 09:38:15 | INFO | Inserted message with _id: 68d7f6d7f0fea3c967f13116 into collection: messages_entertainment
+2025-09-27 09:38:15 | INFO | Called process_message() with:
+2025-09-27 09:38:15 | INFO |    message={'message': 'I just shared an app! It was amazing.', 'author': 'Bob', 'timestamp': '2025-09-27 09:38:08', 'category': 'other', 'sentiment': 0.83, 'keyword_mentioned': 'other', 'message_length': 37}
+2025-09-27 09:38:15 | INFO | Processed message: {'message': 'I just shared an app! It was amazing.', 'author': 'Bob', 'timestamp': '2025-09-27 09:38:08', 'category': 'other', 'sentiment': 0.83, 'keyword_mentioned': 'other', 'message_length': 37}
+2025-09-27 09:38:15 | INFO | Calling MongoDB insert_message() with:
+2025-09-27 09:38:15 | INFO | message={'message': 'I just shared an app! It was amazing.', 'author': 'Bob', 'timestamp': '2025-09-27 09:38:08', 'category': 'other', 'sentiment': 0.83, 'keyword_mentioned': 'other', 'message_length': 37}
+2025-09-27 09:38:15 | INFO | MONGODB_URI: mongodb://localhost:27017/
+2025-09-27 09:38:15 | INFO | MONGODB_DB: mongo_buzz_database
+2025-09-27 09:38:15 | INFO | Inserted message with _id: 68d7f6d7f0fea3c967f13118 into collection: messages_other
+2025-09-27 09:38:15 | INFO | Called process_message() with:
+2025-09-27 09:38:15 | INFO |    message={'message': 'I just tried JavaScript! It was exciting.', 'author': 'Bob', 'timestamp': '2025-09-27 09:38:13', 'category': 'tech', 'sentiment': 0.98, 'keyword_mentioned': 'JavaScript', 'message_length': 41}
+2025-09-27 09:38:15 | INFO | Processed message: {'message': 'I just tried JavaScript! It was exciting.', 'author': 'Bob', 'timestamp': '2025-09-27 09:38:13', 'category': 'tech', 'sentiment': 0.98, 'keyword_mentioned': 'JavaScript', 'message_length': 41}
+2025-09-27 09:38:15 | INFO | Calling MongoDB insert_message() with:
+2025-09-27 09:38:15 | INFO | message={'message': 'I just tried JavaScript! It was exciting.', 'author': 'Bob', 'timestamp': '2025-09-27 09:38:13', 'category': 'tech', 'sentiment': 0.98, 'keyword_mentioned': 'JavaScript', 'message_length': 41}
+2025-09-27 09:38:15 | INFO | MONGODB_URI: mongodb://localhost:27017/
+2025-09-27 09:38:15 | INFO | MONGODB_DB: mongo_buzz_database
+2025-09-27 09:38:16 | INFO | Inserted message with _id: 68d7f6d7f0fea3c967f1311a into collection: messages_tech
+2025-09-27 09:38:18 | INFO | {'message': 'I just found Python! It was amazing.', 'author': 'Bob', 'timestamp': '2025-09-27 09:38:18', 'category': 'tech', 'sentiment': 0.66, 'keyword_mentioned': 'Python', 'message_length': 36}
+2025-09-27 09:38:18 | INFO | Called process_message() with:
+2025-09-27 09:38:18 | INFO |    message={'message': 'I just found Python! It was amazing.', 'author': 'Bob', 'timestamp': '2025-09-27 09:38:18', 'category': 'tech', 'sentiment': 0.66, 'keyword_mentioned': 'Python', 'message_length': 36}
+2025-09-27 09:38:18 | INFO | Processed message: {'message': 'I just found Python! It was amazing.', 'author': 'Bob', 'timestamp': '2025-09-27 09:38:18', 'category': 'tech', 'sentiment': 0.66, 'keyword_mentioned': 'Python', 'message_length': 36}
+2025-09-27 09:38:18 | INFO | Calling MongoDB insert_message() with:
+2025-09-27 09:38:18 | INFO | message={'message': 'I just found Python! It was amazing.', 'author': 'Bob', 'timestamp': '2025-09-27 09:38:18', 'category': 'tech', 'sentiment': 0.66, 'keyword_mentioned': 'Python', 'message_length': 36}
+2025-09-27 09:38:18 | INFO | MONGODB_URI: mongodb://localhost:27017/
+2025-09-27 09:38:18 | INFO | MONGODB_DB: mongo_buzz_database
+2025-09-27 09:38:18 | INFO | Inserted message with _id: 68d7f6daf0fea3c967f1311c into collection: messages_tech
+2025-09-27 09:38:23 | INFO | {'message': 'I just saw game! It was weird.', 'author': 'Eve', 'timestamp': '2025-09-27 09:38:23', 'category': 'gaming', 'sentiment': 0.99, 'keyword_mentioned': 'game', 'message_length': 30}
+2025-09-27 09:38:23 | INFO | Called process_message() with:
+2025-09-27 09:38:23 | INFO |    message={'message': 'I just saw game! It was weird.', 'author': 'Eve', 'timestamp': '2025-09-27 09:38:23', 'category': 'gaming', 'sentiment': 0.99, 'keyword_mentioned': 'game', 'message_length': 30}
+2025-09-27 09:38:23 | INFO | Processed message: {'message': 'I just saw game! It was weird.', 'author': 'Eve', 'timestamp': '2025-09-27 09:38:23', 'category': 'gaming', 'sentiment': 0.99, 'keyword_mentioned': 'game', 'message_length': 30}
+2025-09-27 09:38:23 | INFO | Calling MongoDB insert_message() with:
+2025-09-27 09:38:23 | INFO | message={'message': 'I just saw game! It was weird.', 'author': 'Eve', 'timestamp': '2025-09-27 09:38:23', 'category': 'gaming', 'sentiment': 0.99, 'keyword_mentioned': 'game', 'message_length': 30}
+2025-09-27 09:38:23 | INFO | MONGODB_URI: mongodb://localhost:27017/
+2025-09-27 09:38:23 | INFO | MONGODB_DB: mongo_buzz_database
+2025-09-27 09:38:24 | INFO | Inserted message with _id: 68d7f6dff0fea3c967f1311e into collection: messages_gaming
+2025-09-27 09:38:28 | INFO | {'message': 'I just saw a movie! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:38:28', 'category': 'entertainment', 'sentiment': 0.66, 'keyword_mentioned': 'movie', 'message_length': 33}
+2025-09-27 09:38:28 | INFO | Called process_message() with:
+2025-09-27 09:38:28 | INFO |    message={'message': 'I just saw a movie! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:38:28', 'category': 'entertainment', 'sentiment': 0.66, 'keyword_mentioned': 'movie', 'message_length': 33}
+2025-09-27 09:38:28 | INFO | Processed message: {'message': 'I just saw a movie! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:38:28', 'category': 'entertainment', 'sentiment': 0.66, 'keyword_mentioned': 'movie', 'message_length': 33}
+2025-09-27 09:38:28 | INFO | Calling MongoDB insert_message() with:
+2025-09-27 09:38:28 | INFO | message={'message': 'I just saw a movie! It was funny.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:38:28', 'category': 'entertainment', 'sentiment': 0.66, 'keyword_mentioned': 'movie', 'message_length': 33}
+2025-09-27 09:38:28 | INFO | MONGODB_URI: mongodb://localhost:27017/
+2025-09-27 09:38:28 | INFO | MONGODB_DB: mongo_buzz_database
+2025-09-27 09:38:28 | INFO | Inserted message with _id: 68d7f6e4f0fea3c967f13120 into collection: messages_entertainment
+2025-09-27 09:38:33 | INFO | {'message': 'I just shared an app! It was amazing.', 'author': 'Alice', 'timestamp': '2025-09-27 09:38:33', 'category': 'other', 'sentiment': 0.25, 'keyword_mentioned': 'other', 'message_length': 37}
+2025-09-27 09:38:33 | INFO | Called process_message() with:
+2025-09-27 09:38:33 | INFO |    message={'message': 'I just shared an app! It was amazing.', 'author': 'Alice', 'timestamp': '2025-09-27 09:38:33', 'category': 'other', 'sentiment': 0.25, 'keyword_mentioned': 'other', 'message_length': 37}
+2025-09-27 09:38:33 | INFO | Processed message: {'message': 'I just shared an app! It was amazing.', 'author': 'Alice', 'timestamp': '2025-09-27 09:38:33', 'category': 'other', 'sentiment': 0.25, 'keyword_mentioned': 'other', 'message_length': 37}
+2025-09-27 09:38:33 | INFO | Calling MongoDB insert_message() with:
+2025-09-27 09:38:33 | INFO | message={'message': 'I just shared an app! It was amazing.', 'author': 'Alice', 'timestamp': '2025-09-27 09:38:33', 'category': 'other', 'sentiment': 0.25, 'keyword_mentioned': 'other', 'message_length': 37}
+2025-09-27 09:38:33 | INFO | MONGODB_URI: mongodb://localhost:27017/
+2025-09-27 09:38:33 | INFO | MONGODB_DB: mongo_buzz_database
+2025-09-27 09:38:33 | INFO | Inserted message with _id: 68d7f6e9f0fea3c967f13122 into collection: messages_other
+2025-09-27 09:38:38 | INFO | {'message': 'I just saw travel! It was amazing.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:38:38', 'category': 'travel', 'sentiment': 0.24, 'keyword_mentioned': 'travel', 'message_length': 34}
+2025-09-27 09:38:38 | INFO | Called process_message() with:
+2025-09-27 09:38:38 | INFO |    message={'message': 'I just saw travel! It was amazing.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:38:38', 'category': 'travel', 'sentiment': 0.24, 'keyword_mentioned': 'travel', 'message_length': 34}
+2025-09-27 09:38:38 | INFO | Processed message: {'message': 'I just saw travel! It was amazing.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:38:38', 'category': 'travel', 'sentiment': 0.24, 'keyword_mentioned': 'travel', 'message_length': 34}
+2025-09-27 09:38:38 | INFO | Calling MongoDB insert_message() with:
+2025-09-27 09:38:38 | INFO | message={'message': 'I just saw travel! It was amazing.', 'author': 'Charlie', 'timestamp': '2025-09-27 09:38:38', 'category': 'travel', 'sentiment': 0.24, 'keyword_mentioned': 'travel', 'message_length': 34}
+2025-09-27 09:38:38 | INFO | MONGODB_URI: mongodb://localhost:27017/
+2025-09-27 09:38:38 | INFO | MONGODB_DB: mongo_buzz_database
+2025-09-27 09:38:38 | INFO | Inserted message with _id: 68d7f6eef0fea3c967f13124 into collection: messages_travel
+2025-09-27 09:38:43 | INFO | {'message': 'I just tried Python! It was weird.', 'author': 'Alice', 'timestamp': '2025-09-27 09:38:43', 'category': 'tech', 'sentiment': 0.33, 'keyword_mentioned': 'Python', 'message_length': 34}
+2025-09-27 09:38:43 | INFO | Called process_message() with:
+2025-09-27 09:38:43 | INFO |    message={'message': 'I just tried Python! It was weird.', 'author': 'Alice', 'timestamp': '2025-09-27 09:38:43', 'category': 'tech', 'sentiment': 0.33, 'keyword_mentioned': 'Python', 'message_length': 34}
+2025-09-27 09:38:43 | INFO | Processed message: {'message': 'I just tried Python! It was weird.', 'author': 'Alice', 'timestamp': '2025-09-27 09:38:43', 'category': 'tech', 'sentiment': 0.33, 'keyword_mentioned': 'Python', 'message_length': 34}
+2025-09-27 09:38:43 | INFO | Calling MongoDB insert_message() with:
+2025-09-27 09:38:43 | INFO | message={'message': 'I just tried Python! It was weird.', 'author': 'Alice', 'timestamp': '2025-09-27 09:38:43', 'category': 'tech', 'sentiment': 0.33, 'keyword_mentioned': 'Python', 'message_length': 34}
+2025-09-27 09:38:43 | INFO | MONGODB_URI: mongodb://localhost:27017/
+2025-09-27 09:38:43 | INFO | MONGODB_DB: mongo_buzz_database
+2025-09-27 09:38:43 | INFO | Inserted message with _id: 68d7f6f3f0fea3c967f13126 into collection: messages_tech
+2025-09-27 09:38:48 | INFO | {'message': 'I just shared JavaScript! It was amazing.', 'author': 'Alice', 'timestamp': '2025-09-27 09:38:48', 'category': 'tech', 'sentiment': 0.3, 'keyword_mentioned': 'JavaScript', 'message_length': 41}
+2025-09-27 09:38:48 | INFO | Called process_message() with:
+2025-09-27 09:38:48 | INFO |    message={'message': 'I just shared JavaScript! It was amazing.', 'author': 'Alice', 'timestamp': '2025-09-27 09:38:48', 'category': 'tech', 'sentiment': 0.3, 'keyword_mentioned': 'JavaScript', 'message_length': 41}
+2025-09-27 09:38:48 | INFO | Processed message: {'message': 'I just shared JavaScript! It was amazing.', 'author': 'Alice', 'timestamp': '2025-09-27 09:38:48', 'category': 'tech', 'sentiment': 0.3, 'keyword_mentioned': 'JavaScript', 'message_length': 41}
+2025-09-27 09:38:48 | INFO | Calling MongoDB insert_message() with:
+2025-09-27 09:38:48 | INFO | message={'message': 'I just shared JavaScript! It was amazing.', 'author': 'Alice', 'timestamp': '2025-09-27 09:38:48', 'category': 'tech', 'sentiment': 0.3, 'keyword_mentioned': 'JavaScript', 'message_length': 41}
+2025-09-27 09:38:48 | INFO | MONGODB_URI: mongodb://localhost:27017/
+2025-09-27 09:38:48 | INFO | MONGODB_DB: mongo_buzz_database
+2025-09-27 09:38:48 | INFO | Inserted message with _id: 68d7f6f8f0fea3c967f13128 into collection: messages_tech
+2025-09-27 09:38:53 | INFO | {'message': 'I just loved a movie! It was boring.', 'author': 'Alice', 'timestamp': '2025-09-27 09:38:53', 'category': 'entertainment', 'sentiment': 0.68, 'keyword_mentioned': 'movie', 'message_length': 36}
+2025-09-27 09:38:53 | INFO | Called process_message() with:
+2025-09-27 09:38:53 | INFO |    message={'message': 'I just loved a movie! It was boring.', 'author': 'Alice', 'timestamp': '2025-09-27 09:38:53', 'category': 'entertainment', 'sentiment': 0.68, 'keyword_mentioned': 'movie', 'message_length': 36}
+2025-09-27 09:38:53 | INFO | Processed message: {'message': 'I just loved a movie! It was boring.', 'author': 'Alice', 'timestamp': '2025-09-27 09:38:53', 'category': 'entertainment', 'sentiment': 0.68, 'keyword_mentioned': 'movie', 'message_length': 36}
+2025-09-27 09:38:53 | INFO | Calling MongoDB insert_message() with:
+2025-09-27 09:38:53 | INFO | message={'message': 'I just loved a movie! It was boring.', 'author': 'Alice', 'timestamp': '2025-09-27 09:38:53', 'category': 'entertainment', 'sentiment': 0.68, 'keyword_mentioned': 'movie', 'message_length': 36}
+2025-09-27 09:38:53 | INFO | MONGODB_URI: mongodb://localhost:27017/
+2025-09-27 09:38:53 | INFO | MONGODB_DB: mongo_buzz_database
+2025-09-27 09:38:53 | INFO | Inserted message with _id: 68d7f6fdf0fea3c967f1312a into collection: messages_entertainment
+2025-09-27 09:38:55 | WARNING | Consumer interrupted by user.
+2025-09-27 09:38:55 | INFO | Consumer shutting down.
+2025-09-27 09:38:58 | INFO | {'message': 'I just loved game! It was boring.', 'author': 'Alice', 'timestamp': '2025-09-27 09:38:58', 'category': 'gaming', 'sentiment': 0.69, 'keyword_mentioned': 'game', 'message_length': 33}
+2025-09-27 09:39:01 | WARNING | Producer interrupted by user.
+2025-09-27 09:39:01 | INFO | Kafka producer closed.
+2025-09-27 09:39:01 | INFO | Producer shutting down.

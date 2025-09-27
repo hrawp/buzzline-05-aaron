@@ -1,5 +1,32 @@
 # buzzline-05-aaron
 
+This project was very interesting.  I will provide a narrative here.
+First, I worked to get sqlite to split its output into different tables based on category.  I completed that successfully.
+Next, I created mongodb_consumer_aaron.py as kafka_consumer_case.py called two functions in the sqlite_consumer_case.py.  
+I adapted my file to accommodate MongoDB command logic.
+I also updated kafka_consumer_aaron.py to support MongoDB.  This kafka_consumer_aaron.py file is the one I run in WSL.
+
+
+I then tried to run the code, but I had an error that I could not connect to MongoDB server.
+I tried starting it on my PC, but that did not work.  I had to install MongoDB in WSL.
+That got me a bit farther.
+
+
+I then had to work a half a dozen more code changes.  But soon I could see Kafka processing messages and sending them to MongoDB.
+
+
+I could not find the database, but I opened MongoDB GUI and I could connect to it.  I saw my processed messages, and they persisted through multiple consumer cycles.
+I was a little worried that there were three log entries per message, but the database only had one message per consumer message.  
+
+So, I was satisfied that I completed my two objectives.
+
+1. Split into separate tables based on "category" and have it persist.
+2. Get this project executing with MongoDB.
+
+
+
+
+
 Nearly every streaming analytics system stores processed data somewhere for further analysis, historical reference, or integration with BI tools.
 
 In this example project, we incorporate relational data stores. 
@@ -138,6 +165,15 @@ python3 -m verify_emitters
 ```
 
 ---
+
+## Task 1. Start MongoDB (using WSL if Windows)
+### Mac / Linux
+
+You need to have a MongoDB Server Running in order of Kafka Consumer to write to a MongoDB database.
+
+```shell
+mongod
+```
 
 ## Task 4. Start a New Streaming Application
 
